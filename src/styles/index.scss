@@ -1,0 +1,7 @@
+@charset "utf-8";
+ @import './yo/usage/core/reset.scss';
+ @import './modules/header.scss';
+ $back_color: orange;
+ body{
+     background-color: $back_color; 
+ }
