@@ -1,0 +1,9 @@
+.wrap-banner {
+  position: relative; }
+
+.swiper-container {
+  width: 100%;
+  height: 2.2rem; }
+  .swiper-container img {
+    width: 100%;
+    height: 100%; }

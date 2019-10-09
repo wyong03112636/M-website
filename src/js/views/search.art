@@ -1,0 +1,5 @@
+<div class="search">
+    <input type="text" name="" id="" placeholder="搜索商品，品牌">
+    <span></span>
+    <i class="yo-ico">&#xe624;</i>;
+</div>
