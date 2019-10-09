@@ -1,0 +1,68 @@
+<ul>
+    <li>
+        <a href="#">
+            <div class="tit">
+                <h3>篮球</h3>
+                <p>纯白系列秒杀</p>
+            </div>
+            <div class="pic">
+                <img src="http://shihuo.hupucdn.com/def/20181105/2355ddafee2bdc0963e346192576c3631541383761.jpg?imageView2/0/w/160/h/160/interlace/1" alt="">
+            </div>
+        </a>
+    </li>
+    <li>
+            <a href="#">
+                <div class="tit">
+                    <h3>跑步</h3>
+                    <p>女王节秒杀</p>
+                </div>
+                <div class="pic">
+                    <img src="http://shihuo.hupucdn.com/def/20180801/a580ec1affbbf4a344974bc92969c7671533133549.jpg?imageView2/0/w/160/h/160/interlace/1" alt="">
+                </div>
+            </a>
+        </li>
+        <li>
+                <a href="#">
+                    <div class="tit">
+                        <h3>健身</h3>
+                        <p>布瑞装备秒杀</p>
+                    </div>
+                    <div class="pic">
+                        <img src="http://shihuo.hupucdn.com/def/20170915/f876eb7f43db68bf6618332e8e8d16391505460754.jpg?imageView2/0/w/160/h/160/interlace/1" alt="">
+                    </div>
+                </a>
+            </li>
+            <li>
+                    <a href="#">
+                        <div class="tit">
+                            <h3>足球</h3>
+                            <p>其实是在吹总裁</p>
+                        </div>
+                        <div class="pic">
+                            <img src="http://shihuo.hupucdn.com/def/20170913/5dc29f834528ddfaaf2c6e85769aa5451505294878.jpg?imageView2/0/w/160/h/160/interlace/1" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                        <a href="#">
+                            <div class="tit">
+                                <h3>潮流</h3>
+                                <p>78元短袖秒杀</p>
+                            </div>
+                            <div class="pic">
+                                <img src="http://shihuo.hupucdn.com/trade/reposition/2017-11-29/7bffa5f42341f0c196db59b9fa89de60.png?imageView2/0/w/160/h/160/interlace/1" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                            <a href="#">
+                                <div class="tit">
+                                    <h3>数码</h3>
+                                    <p>手机拍照实测</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="http://shihuo.hupucdn.com/trade/reposition/2018-01-07/f8adecdd315683a6f3c39aa23c1ea0db.png?imageView2/0/w/160/h/160/interlace/1" alt="">
+                                </div>
+                            </a>
+                        </li>
+</ul>

@@ -48,7 +48,7 @@ const proxy = require('http-proxy-middleware')
            middleware : ()=>{
                return [
                     proxy('/api', {
-                        target:'http://m.shihuo.cn/homefis/getNews',
+                        target:'http://m.shihuo.cn',
                         changeOrigin:true,
                         pathRewrite:{
                             '^/api':''

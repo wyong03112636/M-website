@@ -1,7 +1,15 @@
 <div class = "container">
     <main>
-        <div class="wrap-banner"></div>
-        <div class="wrap-search"></div>
+        <div class="main-container">
+            <div class="wrap-banner"></div>
+            <div class="wrap-search"></div>
+            <div class="wrap-classify"></div>
+            <div class="wrap-active"></div>
+            <div class="wrap-hotactive"></div>
+            <div class="wrap-productlist"></div>
+            <div class="wrap-discount"></div>
+            <div class="wrap-list"></div>
+        </div> 
     </main>
     <footer>
         <ul>

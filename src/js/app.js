@@ -1,3 +1,9 @@
 require('./consrollers/index');
 require('./consrollers/banner');
 require('./consrollers/search');
+require('./consrollers/classify');
+require('./consrollers/active');
+require('./consrollers/hotactive');
+require('./consrollers/productlist');
+require('./consrollers/discount');
+require('./consrollers/list');

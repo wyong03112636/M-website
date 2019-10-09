@@ -1,0 +1,16 @@
+<ul>
+    {{each res}}
+    <li>
+        <div class="picture">
+            <img src="{{$value.data.img}}" alt="">
+        </div>
+        <div class="describe">
+            <h4>{{$value.data.title}}</h4>
+            <p><img src="http://sh1.hoopchina.com.cn/images/trademobile/quote_left.png" alt="">
+                <span>{{$value.data.subtitle}}</span>
+            <img src="http://sh1.hoopchina.com.cn/images/trademobile/quote_right.png" alt=""></p>
+            <b>{{$value.data.merchant}}<i>￥{{$value.data.price}}</i></b>
+        </div>
+    </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,28 @@
+.wrap-hotactive {
+  width: 100%;
+  height: auto; }
+  .wrap-hotactive .hotactive {
+    height: 100%;
+    background-color: #ffffff; }
+    .wrap-hotactive .hotactive .title {
+      color: #222222;
+      padding-left: .1rem;
+      padding-top: .1rem;
+      height: .35rem; }
+    .wrap-hotactive .hotactive .content {
+      padding: .05rem; }
+      .wrap-hotactive .hotactive .content ul {
+        display: flex;
+        flex-wrap: wrap; }
+        .wrap-hotactive .hotactive .content ul li {
+          flex: 1; }
+          .wrap-hotactive .hotactive .content ul li img {
+            width: 1.2rem;
+            height: .7rem; }
+          .wrap-hotactive .hotactive .content ul li h4 {
+            text-align: left;
+            font-size: .12rem; }
+          .wrap-hotactive .hotactive .content ul li p {
+            font-size: .1rem;
+            text-align: center;
+            color: #999999; }

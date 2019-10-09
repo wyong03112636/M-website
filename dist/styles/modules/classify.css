@@ -1,0 +1,32 @@
+.wrap-classify {
+  width: 100%;
+  height: auto;
+  padding: .08rem; }
+  .wrap-classify ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #fff;
+    flex-wrap: wrap; }
+    .wrap-classify ul li {
+      width: 1.5rem; }
+      .wrap-classify ul li:nth-of-type(4) a .tit {
+        padding-left: 0; }
+      .wrap-classify ul li a {
+        display: flex; }
+        .wrap-classify ul li a .tit {
+          padding-top: .15rem;
+          flex: 1;
+          flex-shrink: 1; }
+          .wrap-classify ul li a .tit h3 {
+            color: #444;
+            font-size: .17rem; }
+          .wrap-classify ul li a .tit p {
+            color: #aaaaaa;
+            font-size: .12rem; }
+        .wrap-classify ul li a .pic {
+          padding-left: .15rem;
+          width: .7rem;
+          height: .7rem; }
+          .wrap-classify ul li a .pic img {
+            height: 100%; }

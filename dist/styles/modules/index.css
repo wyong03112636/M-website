@@ -6,7 +6,10 @@
   .container main {
     flex-grow: 1;
     background: #f7f7f7;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: auto; }
   .container footer {
     height: .44rem;
     background-color: #f7f7f7; }

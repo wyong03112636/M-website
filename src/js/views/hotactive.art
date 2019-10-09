@@ -1,0 +1,39 @@
+<div class="hotactive">
+    <div class="title">
+        热门活动
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                <img src="http://shihuo.hupucdn.com/appHome/201808/1710/5e683699826e2a13abd239e4e4e36793.jpg" alt="">
+                <h4>skullcandy骷髅头耳机</h4>
+                <p>券后低至89元起</p>
+            </li>
+            <li>
+                <img src="http://shihuo.hupucdn.com/appZone/201811/2311/e5e9c867a2016694abe40d752c81080a.jpg" alt="">
+                <h4>应季机能风</h4>
+                <p>酷站雨雪</p>
+            </li>
+            <li>
+                <img src="http://shihuo.hupucdn.com/appZone/201805/1414/c5f797407c24e87cb7648abc937e9955.jpg" alt="">
+                <h4>热门资讯</h4>
+                <p>最新最热门的数码资讯</p>
+            </li>
+            <li>
+                <img src="http://shihuo.hupucdn.com/appZone/201805/0911/8c8778d4d917f0fb719a2f40ff3b71eb.jpg" alt="">
+                <h4>数码测评</h4>
+                <p>全国解析热门数码产品</p>
+            </li>
+            <li>
+                <img src="http://shihuo.hupucdn.com/appZone/201811/1214/ea91521753d0e0f95f4a5c82094aee79.jpg" alt="">
+                <h4>考虑一下荧光绿</h4>
+                <p>要想生活过得去</p>
+            </li>
+            <li>
+                <img src="http://shihuo.hupucdn.com/appZone/201801/3117/dfb166bb32589d4c0c0f33613a7160cc.jpg" alt="">
+                <h4>装备资讯</h4>
+                <p>两分钟懂你想要</p>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.wrap-discount {
+  width: 100%;
+  height: auto; }
+  .wrap-discount .discount {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: .07rem 0; }
+    .wrap-discount .discount h4 {
+      padding-left: .1rem;
+      width: 100%;
+      color: #444; }
+    .wrap-discount .discount ul {
+      padding: 0 .07rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .wrap-discount .discount ul li {
+        width: 100%;
+        flex: 1; }
+        .wrap-discount .discount ul li img {
+          width: 100%; }

@@ -1,0 +1,30 @@
+.wrap-list {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: .07rem 0; }
+  .wrap-list ul {
+    width: 100%; }
+    .wrap-list ul li {
+      width: 100%;
+      padding: 0 .07rem;
+      display: flex;
+      justify-content: space-between; }
+      .wrap-list ul li .picture {
+        width: 33%; }
+        .wrap-list ul li .picture img {
+          width: 100%; }
+      .wrap-list ul li .describe {
+        padding: .07rem 0;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .wrap-list ul li .describe h4 {
+          color: #444; }
+        .wrap-list ul li .describe span {
+          color: #666; }
+        .wrap-list ul li .describe b {
+          color: #666; }
+          .wrap-list ul li .describe b i {
+            color: #ff4338; }

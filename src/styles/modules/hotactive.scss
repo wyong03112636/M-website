@@ -1,0 +1,45 @@
+.wrap-hotactive {
+    width: 100%;
+    height: auto;
+
+    .hotactive {
+        height: 100%;
+        background-color: #ffffff;
+
+        .title {
+            color: #222222;
+            padding-left: .1rem;
+            padding-top: .1rem;
+            height: .35rem;
+        }
+
+        .content {
+            padding: .05rem;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    flex: 1;
+
+                    img {
+                        width: 1.2rem;
+                        height: .7rem;
+                    }
+
+                    h4 {
+                        text-align: left;
+                        font-size: .12rem;
+                    }
+
+                    p {
+                        font-size: .1rem;
+                        text-align: center;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}

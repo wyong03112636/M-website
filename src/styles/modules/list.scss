@@ -1,0 +1,40 @@
+.wrap-list{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: .07rem 0;
+    ul{
+        width: 100%;
+        li{
+            width: 100%;
+            padding: 0 .07rem;
+            display: flex;
+            justify-content: space-between;
+            .picture{
+                width: 33%;
+                img{
+                    width: 100%;
+                }
+            }
+            .describe{
+                padding: .07rem 0;
+                width: 67%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h4{
+                    color: #444;
+                }
+                span{
+                    color: #666;
+                }
+                b{
+                    color: #666;
+                    i{
+                        color: #ff4338;
+                    }
+                }
+            }
+        }
+    }
+}
