@@ -13,11 +13,11 @@
     </main>
     <footer>
         <ul>
-            <li class="active"><span class="yo-ico">&#xe61a;</span> 首页</li>
-            <li><span class="yo-ico">&#xec35;</span> 优惠</li>
-            <li><span class="yo-ico">&#xe669;</span> 发现</li>
-            <li><span class="yo-ico">&#xe621;</span> 装备</li>
-            <li><span class="yo-ico">&#xe682;</span> 更多</li>
+            <li class="active" data-page="index"><span class="yo-ico">&#xe61a;</span> 首页</li>
+            <li data-page="discount"><span class="yo-ico">&#xec35;</span> 优惠</li>
+            <li data-page="discover"><span class="yo-ico">&#xe669;</span> 发现</li>
+            <li data-page="equip"><span class="yo-ico">&#xe621;</span> 装备</li>
+            <li data-page="more"><span class="yo-ico">&#xe682;</span> 更多</li>
         </ul>
     </footer>
 </div>

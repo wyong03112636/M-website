@@ -1,5 +1,5 @@
-<ul>
-    {{each res}}
+
+    {{each list}}
     <li>
         <div class="picture">
             <img src="{{$value.data.img}}" alt="">
@@ -13,4 +13,3 @@
         </div>
     </li>
     {{/each}}
-</ul>

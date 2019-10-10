@@ -28,3 +28,22 @@
           color: #666; }
           .wrap-list ul li .describe b i {
             color: #ff4338; }
+  .wrap-list .head,
+  .wrap-list .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: .4rem; }
+  .wrap-list .head img,
+  .wrap-list .foot img {
+    width: .16rem;
+    height: .16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms; }
+  .wrap-list .head img {
+    transform: rotate(180deg); }
+  .wrap-list .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important; }
+  .wrap-list .down {
+    transform: rotate(180deg); }

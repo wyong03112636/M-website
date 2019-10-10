@@ -1,4 +1,4 @@
-const {src,dest,series,parallel,watch} = require('gulp');
+const {src,dest,series,parallel,watch,gulp} = require('gulp');
 const sass = require('gulp-sass');
 const connect = require('gulp-connect');
 const webpack = require('webpack-stream')
@@ -43,7 +43,7 @@ const proxy = require('http-proxy-middleware')
        return await connect.server({
            name: 'App',
            root:'./dist',
-           port : 8000,
+           port : 9000,
            livereload : true,
            middleware : ()=>{
                return [
@@ -58,13 +58,21 @@ const proxy = require('http-proxy-middleware')
            },    
        })
    }
-   function watchCode(){
-       watch('./src/*.html', series(html))
-       watch('./src/**/*.scss', series(css))
-       watch('./src/js/**/*', series(js))
-       watch('./src/assets/**/*', series(assets))
-       watch('./src/libs/**/*', series(libs))
+   async function watchCode(){
+       await watch('./src/*.html', series(html))
+       await watch('./src/**/*.scss', series(css))
+       await watch('./src/js/**/*', series(js))
+       await watch('./src/assets/**/*', series(assets))
+       await watch('./src/libs/**/*', series(libs))
    }
+//    gulp.task(watchCode, done=>{
+//         watch('./src/*.html', series(html))
+//         watch('./src/**/*.scss', series(css))
+//         watch('./src/js/**/*', series(js))
+//         watch('./src/assets/**/*', series(assets))
+//         watch('./src/libs/**/*', series(libs))
+//     done()
+//    })
    function libs () {
        return src('./src/libs/*')
        .pipe(dest('./dist/libs'))

@@ -173,10 +173,11 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./consrollers/index */ \"./src/js/consrollers/index.js\");\r\n__webpack_require__(/*! ./consrollers/banner */ \"./src/js/consrollers/banner.js\");\r\n__webpack_require__(/*! ./consrollers/search */ \"./src/js/consrollers/search.js\");\r\n__webpack_require__(/*! ./consrollers/classify */ \"./src/js/consrollers/classify.js\");\r\n__webpack_require__(/*! ./consrollers/active */ \"./src/js/consrollers/active.js\");\r\n__webpack_require__(/*! ./consrollers/hotactive */ \"./src/js/consrollers/hotactive.js\");\r\n__webpack_require__(/*! ./consrollers/productlist */ \"./src/js/consrollers/productlist.js\");\r\n__webpack_require__(/*! ./consrollers/discount */ \"./src/js/consrollers/discount.js\");\r\n__webpack_require__(/*! ./consrollers/list */ \"./src/js/consrollers/list.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _router_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./router/index */ \"./src/js/router/index.js\");\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -184,10 +185,11 @@ eval("__webpack_require__(/*! ./consrollers/index */ \"./src/js/consrollers/inde
 /*!**************************************!*\
   !*** ./src/js/consrollers/active.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const active = __webpack_require__(/*! ../views/active.art */ \"./src/js/views/active.art\");\r\nclass Active{\r\n    constructor(){\r\n        this.render()\r\n    }\r\n    render(){\r\n        let html = active({});\r\n        $('.wrap-active').html(html);\r\n    }\r\n}\r\nnew Active();\n\n//# sourceURL=webpack:///./src/js/consrollers/active.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst active = __webpack_require__(/*! ../views/active.art */ \"./src/js/views/active.art\");\r\nclass Active{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = active({});\r\n        $('.wrap-active').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Active());\n\n//# sourceURL=webpack:///./src/js/consrollers/active.js?");
 
 /***/ }),
 
@@ -195,10 +197,11 @@ eval("const active = __webpack_require__(/*! ../views/active.art */ \"./src/js/v
 /*!**************************************!*\
   !*** ./src/js/consrollers/banner.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const banner = __webpack_require__(/*! ../views/banner.art */ \"./src/js/views/banner.art\");\r\nconst Swiper = __webpack_require__(/*! swiper */ \"./node_modules/swiper/js/swiper.esm.bundle.js\");\r\nclass Banner{\r\n    constructor(){\r\n        this.render();\r\n    }\r\n    render(){\r\n        const html = banner({});    \r\n        $('.wrap-banner').html(html);\r\n    }\r\n}\r\nnew Banner();\r\nnew Swiper.default('.swiper-container', {\r\n    pagination: {\r\n        el:'.swiper-pagination',\r\n    },\r\n    autoplay: true,\r\n    loop:true,\r\n});\n\n//# sourceURL=webpack:///./src/js/consrollers/banner.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst banner = __webpack_require__(/*! ../views/banner.art */ \"./src/js/views/banner.art\");\r\n\r\nclass Banner{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        const html = banner({});    \r\n        $('.wrap-banner').html(html);\r\n    } \r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Banner());\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/banner.js?");
 
 /***/ }),
 
@@ -206,10 +209,11 @@ eval("const banner = __webpack_require__(/*! ../views/banner.art */ \"./src/js/v
 /*!****************************************!*\
   !*** ./src/js/consrollers/classify.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const classify = __webpack_require__(/*! ../views/classify.art */ \"./src/js/views/classify.art\");\r\nclass Classify{\r\n    constructor(){\r\n        this.render()\r\n    }\r\n    render(){\r\n        let html = classify({});\r\n        $('.wrap-classify').html(html);\r\n    }\r\n}\r\nnew Classify();\n\n//# sourceURL=webpack:///./src/js/consrollers/classify.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst classify = __webpack_require__(/*! ../views/classify.art */ \"./src/js/views/classify.art\");\r\nclass Classify{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = classify({});\r\n        $('.wrap-classify').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Classify());\n\n//# sourceURL=webpack:///./src/js/consrollers/classify.js?");
 
 /***/ }),
 
@@ -217,10 +221,47 @@ eval("const classify = __webpack_require__(/*! ../views/classify.art */ \"./src/
 /*!****************************************!*\
   !*** ./src/js/consrollers/discount.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const discount = __webpack_require__(/*! ../views/discount.art */ \"./src/js/views/discount.art\");\r\n\r\nclass Discount{\r\n    constructor(){\r\n        this.render()\r\n    }\r\n    render(){\r\n        let html = discount({});\r\n        $('.wrap-discount').html(html);\r\n    }\r\n}\r\nnew Discount()\n\n//# sourceURL=webpack:///./src/js/consrollers/discount.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst discount = __webpack_require__(/*! ../views/discount.art */ \"./src/js/views/discount.art\");\r\n\r\nclass Discount{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = discount({});\r\n        $('.wrap-discount').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Discount());\n\n//# sourceURL=webpack:///./src/js/consrollers/discount.js?");
+
+/***/ }),
+
+/***/ "./src/js/consrollers/discount_page.js":
+/*!*********************************************!*\
+  !*** ./src/js/consrollers/discount_page.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst disPageView = __webpack_require__(/*! ../views/discount_page.art */ \"./src/js/views/discount_page.art\");\r\n\r\nclass DiscountPage{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = disPageView()\r\n        $('main').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new DiscountPage());\n\n//# sourceURL=webpack:///./src/js/consrollers/discount_page.js?");
+
+/***/ }),
+
+/***/ "./src/js/consrollers/discover_page.js":
+/*!*********************************************!*\
+  !*** ./src/js/consrollers/discover_page.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst discoverView = __webpack_require__(/*! ../views/discover_page.art */ \"./src/js/views/discover_page.art\");\r\n\r\nclass Discover{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = discoverView()\r\n        $('main').html(html)\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Discover());\n\n//# sourceURL=webpack:///./src/js/consrollers/discover_page.js?");
+
+/***/ }),
+
+/***/ "./src/js/consrollers/equip_page.js":
+/*!******************************************!*\
+  !*** ./src/js/consrollers/equip_page.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst equipView = __webpack_require__(/*! ../views/equip_page.art */ \"./src/js/views/equip_page.art\");\r\n\r\nclass Equip{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = equipView()\r\n        $('main').html(html)\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Equip());\n\n//# sourceURL=webpack:///./src/js/consrollers/equip_page.js?");
 
 /***/ }),
 
@@ -228,10 +269,11 @@ eval("const discount = __webpack_require__(/*! ../views/discount.art */ \"./src/
 /*!*****************************************!*\
   !*** ./src/js/consrollers/hotactive.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const hotactive = __webpack_require__(/*! ../views/hotactive.art */ \"./src/js/views/hotactive.art\");\r\nclass HotActive{\r\n    constructor(){\r\n        this.render()\r\n    }\r\n    render(){\r\n        let html = hotactive({});\r\n        $('.wrap-hotactive').html(html);\r\n    }\r\n}\r\nnew HotActive();\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/hotactive.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst hotactive = __webpack_require__(/*! ../views/hotactive.art */ \"./src/js/views/hotactive.art\");\r\nclass HotActive{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = hotactive({});\r\n        $('.wrap-hotactive').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new HotActive());\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/hotactive.js?");
 
 /***/ }),
 
@@ -239,10 +281,11 @@ eval("const hotactive = __webpack_require__(/*! ../views/hotactive.art */ \"./sr
 /*!*************************************!*\
   !*** ./src/js/consrollers/index.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const layoutViews = __webpack_require__(/*! ../views/layout.art */ \"./src/js/views/layout.art\")\r\nconst bScroll = __webpack_require__(/*! better-scroll */ \"./node_modules/better-scroll/dist/bscroll.esm.js\");\r\n\r\nclass IndexView{\r\n    constructor(){\r\n        this.render()\r\n        this.stretch()\r\n    }\r\n    render(){\r\n        const html = layoutViews({});\r\n        $('#root').html(html);\r\n    }\r\n    stretch(){\r\n        let bscroll = new bScroll.default($('main').get(0))\r\n    }\r\n}\r\nnew IndexView();\n\n//# sourceURL=webpack:///./src/js/consrollers/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _active__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./active */ \"./src/js/consrollers/active.js\");\n/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./banner */ \"./src/js/consrollers/banner.js\");\n/* harmony import */ var _classify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./classify */ \"./src/js/consrollers/classify.js\");\n/* harmony import */ var _discount__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./discount */ \"./src/js/consrollers/discount.js\");\n/* harmony import */ var _hotactive__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hotactive */ \"./src/js/consrollers/hotactive.js\");\n/* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./list */ \"./src/js/consrollers/list.js\");\n/* harmony import */ var _productlist__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./productlist */ \"./src/js/consrollers/productlist.js\");\n/* harmony import */ var _search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./search */ \"./src/js/consrollers/search.js\");\nconst layoutViews = __webpack_require__(/*! ../views/layout.art */ \"./src/js/views/layout.art\")\r\nconst Swiper = __webpack_require__(/*! swiper */ \"./node_modules/swiper/js/swiper.esm.bundle.js\");\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\nclass IndexView{\r\n    constructor(){ \r\n    }\r\n    bindEvent(){\r\n        location.hash = $(this).attr('data-page')\r\n\r\n    }\r\n    async render(){\r\n        const html = await layoutViews({});\r\n        console.log(html)\r\n        $('#root').html(html);\r\n        _active__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render();\r\n        _banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render();\r\n        new Swiper.default('.swiper-container', {\r\n            pagination: {\r\n                el:'.swiper-pagination',\r\n            },\r\n            autoplay: true,\r\n            loop:true,\r\n        });\r\n        _classify__WEBPACK_IMPORTED_MODULE_2__[\"default\"].render();\r\n        _discount__WEBPACK_IMPORTED_MODULE_3__[\"default\"].render();\r\n        _hotactive__WEBPACK_IMPORTED_MODULE_4__[\"default\"].render();\r\n        _list__WEBPACK_IMPORTED_MODULE_5__[\"default\"].render();\r\n        _productlist__WEBPACK_IMPORTED_MODULE_6__[\"default\"].render();\r\n        _search__WEBPACK_IMPORTED_MODULE_7__[\"default\"].render();\r\n\r\n        $('footer ul').on('click', \"li\",this.bindEvent)\r\n    }   \r\n    \r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new IndexView());\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/index.js?");
 
 /***/ }),
 
@@ -250,10 +293,23 @@ eval("const layoutViews = __webpack_require__(/*! ../views/layout.art */ \"./src
 /*!************************************!*\
   !*** ./src/js/consrollers/list.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const list = __webpack_require__(/*! ../views/list.art */ \"./src/js/views/list.art\")\r\nconst listcount = __webpack_require__(/*! ../models/list */ \"./src/js/models/list.js\");\r\n\r\nclass List{\r\n    constructor(){\r\n        this.render()\r\n    }\r\n    async render(){\r\n        let res = await listcount.get({pageNo:4});\r\n        res = res.data;\r\n        console.log(res);\r\n        let html = list({res})\r\n        $('.wrap-list').html(html);\r\n    }\r\n}\r\nnew List();\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/list.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst listmodel = __webpack_require__(/*! ../views/list.art */ \"./src/js/views/list.art\")\r\nconst listcount = __webpack_require__(/*! ../models/list */ \"./src/js/models/list.js\");\r\nconst bScroll = __webpack_require__(/*! better-scroll */ \"./node_modules/better-scroll/dist/bscroll.esm.js\");\r\nconst loading = __webpack_require__(/*! ../views/loading.art */ \"./src/js/views/loading.art\");\r\n\r\n\r\n\r\nclass List{\r\n    constructor(){\r\n        this.list = [];\r\n        this.pageNo = 2;\r\n        this.pageSize = 20;\r\n    }\r\n    renderer(list){\r\n        let html = listmodel({list})\r\n        $('.wrap-list ul').html(html);\r\n    }\r\n    async render(){\r\n        let that = this;\r\n        let res = await listcount.get({\r\n            pageNo:this.pageNo,\r\n            pageSize:this.pageSize\r\n        });\r\n        this.res = res;\r\n        //首先加载不需要请求的数据\r\n        let html = loading({})\r\n        let $wrap_list =  $('.wrap-list');\r\n        $wrap_list.html(html);\r\n\r\n        //加载请求的数据放入ul中\r\n        let pro_infor = this.list = res.data;\r\n        this.renderer(pro_infor);\r\n\r\n        //定义图像\r\n        let $imgFoot = $('foot img');\r\n        let bscroll = new bScroll.default($('main').get(0), {\r\n            probeType:2,\r\n        })\r\n        bscroll.on('scrollEnd',async function(){\r\n            // 上拉加载更多\r\n            if(this.maxScrollY> this.y && that.res.msg === 'ok'){\r\n                that.pageNo++;\r\n                $imgFoot.attr('src', '/assets/images/ajax-loader.gif')\r\n                let res = await listcount.get({\r\n                    pageNo:that.pageNo,\r\n                    pageSize:that.pageSize,\r\n                })\r\n                let {data:list, msg} = res;\r\n                that.list.msg = msg;\r\n\r\n                that.list = [...that.list, ...list];\r\n                that.renderer(that.list)\r\n                bscroll.scrollBy(0,40);\r\n            }\r\n        })\r\n        bscroll.on('scroll', function(){\r\n            if(this.maxScrollY>this.y){\r\n                $imgFoot.addClass('down');\r\n            }\r\n        })\r\n    }\r\n   \r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new List());\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/list.js?");
+
+/***/ }),
+
+/***/ "./src/js/consrollers/more_page.js":
+/*!*****************************************!*\
+  !*** ./src/js/consrollers/more_page.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst moreView = __webpack_require__(/*! ../views/more_page.art */ \"./src/js/views/more_page.art\");\r\n\r\nclass More{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = moreView()\r\n        $('main').html(html)\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new More());\n\n//# sourceURL=webpack:///./src/js/consrollers/more_page.js?");
 
 /***/ }),
 
@@ -261,10 +317,11 @@ eval("const list = __webpack_require__(/*! ../views/list.art */ \"./src/js/views
 /*!*******************************************!*\
   !*** ./src/js/consrollers/productlist.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const product = __webpack_require__(/*! ../views/productlist.art */ \"./src/js/views/productlist.art\");\r\n\r\nclass ProductList{\r\n    constructor(){\r\n        this.render()\r\n    }\r\n    render(){\r\n        let html = product({});\r\n        $('.wrap-productlist').html(html);\r\n    }\r\n}\r\nnew ProductList();\n\n//# sourceURL=webpack:///./src/js/consrollers/productlist.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst product = __webpack_require__(/*! ../views/productlist.art */ \"./src/js/views/productlist.art\");\r\n\r\nclass ProductList{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = product({});\r\n        $('.wrap-productlist').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new ProductList());\n\n//# sourceURL=webpack:///./src/js/consrollers/productlist.js?");
 
 /***/ }),
 
@@ -272,10 +329,11 @@ eval("const product = __webpack_require__(/*! ../views/productlist.art */ \"./sr
 /*!**************************************!*\
   !*** ./src/js/consrollers/search.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const search = __webpack_require__(/*! ../views/search.art */ \"./src/js/views/search.art\");\r\n\r\nclass Search{\r\n    constructor(){\r\n        this.render();\r\n    }\r\n    render(){\r\n        let html = search({});\r\n        $('.wrap-search').html(html);\r\n    }\r\n}\r\nnew Search();\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/search.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst search = __webpack_require__(/*! ../views/search.art */ \"./src/js/views/search.art\");\r\n\r\nclass Search{\r\n    constructor(){\r\n    }\r\n    render(){\r\n        let html = search({});      \r\n        $('.wrap-search').html(html);\r\n    }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Search());\r\n\n\n//# sourceURL=webpack:///./src/js/consrollers/search.js?");
 
 /***/ }),
 
@@ -286,7 +344,19 @@ eval("const search = __webpack_require__(/*! ../views/search.art */ \"./src/js/v
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = {\r\n    get({pageSize = 20, pageNo = 2}){\r\n        let now = Date.now();\r\n        now = (now+'').slice(0,10)\r\n        console.log(now);\r\n\r\n        return $.ajax({\r\n            url:`/api/homefis/getNews?pageSize=${pageSize}&param_str=${now}%3A${pageNo}%3A&type=&channel_type=`,\r\n            dataType:'json'\r\n        })\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/js/models/list.js?");
+eval("module.exports = {\r\n    get({pageSize = 20, pageNo = 2}){\r\n        let now = Date.now();\r\n        now = (now+'').slice(0,10);\r\n        return $.ajax({\r\n            url:`/api/homefis/getNews?pageSize=${pageSize}&param_str=${now}%3A${pageNo}%3A&type=&channel_type=`,\r\n            dataType:'json'\r\n        })\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/js/models/list.js?");
+
+/***/ }),
+
+/***/ "./src/js/router/index.js":
+/*!********************************!*\
+  !*** ./src/js/router/index.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _consrollers_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../consrollers/index */ \"./src/js/consrollers/index.js\");\n/* harmony import */ var _consrollers_discount_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../consrollers/discount_page */ \"./src/js/consrollers/discount_page.js\");\n/* harmony import */ var _consrollers_discover_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../consrollers/discover_page */ \"./src/js/consrollers/discover_page.js\");\n/* harmony import */ var _consrollers_equip_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../consrollers/equip_page */ \"./src/js/consrollers/equip_page.js\");\n/* harmony import */ var _consrollers_more_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../consrollers/more_page */ \"./src/js/consrollers/more_page.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nclass Router{\r\n    constructor(){\r\n        this.bindEvent()\r\n    }\r\n    bindEvent(){\r\n        window.addEventListener('load',this.hanelLoadPage.bind(this));\r\n        window.addEventListener('hashchange', this.hanelHashChangePage.bind(this));\r\n    }\r\n    renderDom(hash){\r\n        let pageController = {\r\n            indexController: _consrollers_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\r\n            discountController: _consrollers_discount_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\r\n            discoverController: _consrollers_discover_page__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\r\n            equipController: _consrollers_equip_page__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\r\n            moreController: _consrollers_more_page__WEBPACK_IMPORTED_MODULE_4__[\"default\"]\r\n        }\r\n        pageController[hash + 'Controller'].render()\r\n    }\r\n    setAciveClass(hash){\r\n        $(`footer li[data-page=${hash}]`).addClass('active').siblings().removeClass('active');\r\n    }\r\n    async hanelLoadPage(){\r\n        await _consrollers_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render()\r\n        let hash = location.hash.substr(1) || 'index';\r\n        location.hash = hash;\r\n        this.renderDom(hash);\r\n        this.setAciveClass(hash);\r\n    }\r\n    hanelHashChangePage(){\r\n        let hash = location.hash.substr(1);\r\n        this.renderDom(hash)\r\n        this.setAciveClass(hash)\r\n    }\r\n}\r\nnew Router()\n\n//# sourceURL=webpack:///./src/js/router/index.js?");
 
 /***/ }),
 
@@ -334,6 +404,39 @@ eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/
 
 /***/ }),
 
+/***/ "./src/js/views/discount_page.art":
+/*!****************************************!*\
+  !*** ./src/js/views/discount_page.art ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div>优惠页面</div>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/discount_page.art?");
+
+/***/ }),
+
+/***/ "./src/js/views/discover_page.art":
+/*!****************************************!*\
+  !*** ./src/js/views/discover_page.art ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div>discover</div>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/discover_page.art?");
+
+/***/ }),
+
+/***/ "./src/js/views/equip_page.art":
+/*!*************************************!*\
+  !*** ./src/js/views/equip_page.art ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div>equip</div>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/equip_page.art?");
+
+/***/ }),
+
 /***/ "./src/js/views/hotactive.art":
 /*!************************************!*\
   !*** ./src/js/views/hotactive.art ***!
@@ -352,7 +455,7 @@ eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div class = \"container\">\\r\\n    <main>\\r\\n        <div class=\"main-container\">\\r\\n            <div class=\"wrap-banner\"></div>\\r\\n            <div class=\"wrap-search\"></div>\\r\\n            <div class=\"wrap-classify\"></div>\\r\\n            <div class=\"wrap-active\"></div>\\r\\n            <div class=\"wrap-hotactive\"></div>\\r\\n            <div class=\"wrap-productlist\"></div>\\r\\n            <div class=\"wrap-discount\"></div>\\r\\n            <div class=\"wrap-list\"></div>\\r\\n        </div> \\r\\n    </main>\\r\\n    <footer>\\r\\n        <ul>\\r\\n            <li class=\"active\"><span class=\"yo-ico\">&#xe61a;</span> 首页</li>\\r\\n            <li><span class=\"yo-ico\">&#xec35;</span> 优惠</li>\\r\\n            <li><span class=\"yo-ico\">&#xe669;</span> 发现</li>\\r\\n            <li><span class=\"yo-ico\">&#xe621;</span> 装备</li>\\r\\n            <li><span class=\"yo-ico\">&#xe682;</span> 更多</li>\\r\\n        </ul>\\r\\n    </footer>\\r\\n</div>\\r\\n\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/layout.art?");
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div class = \"container\">\\r\\n    <main>\\r\\n        <div class=\"main-container\">\\r\\n            <div class=\"wrap-banner\"></div>\\r\\n            <div class=\"wrap-search\"></div>\\r\\n            <div class=\"wrap-classify\"></div>\\r\\n            <div class=\"wrap-active\"></div>\\r\\n            <div class=\"wrap-hotactive\"></div>\\r\\n            <div class=\"wrap-productlist\"></div>\\r\\n            <div class=\"wrap-discount\"></div>\\r\\n            <div class=\"wrap-list\"></div>\\r\\n        </div> \\r\\n    </main>\\r\\n    <footer>\\r\\n        <ul>\\r\\n            <li class=\"active\" data-page=\"index\"><span class=\"yo-ico\">&#xe61a;</span> 首页</li>\\r\\n            <li data-page=\"discount\"><span class=\"yo-ico\">&#xec35;</span> 优惠</li>\\r\\n            <li data-page=\"discover\"><span class=\"yo-ico\">&#xe669;</span> 发现</li>\\r\\n            <li data-page=\"equip\"><span class=\"yo-ico\">&#xe621;</span> 装备</li>\\r\\n            <li data-page=\"more\"><span class=\"yo-ico\">&#xe682;</span> 更多</li>\\r\\n        </ul>\\r\\n    </footer>\\r\\n</div>\\r\\n\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/layout.art?");
 
 /***/ }),
 
@@ -363,7 +466,29 @@ eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '', $each = $imports.$each, res = $data.res, $value = $data.$value, $index = $data.$index, $escape = $imports.$escape;\n    $$out += '<ul>\\r\\n    ';\n    $each(res, function ($value, $index) {\n        $$out += '\\r\\n    <li>\\r\\n        <div class=\"picture\">\\r\\n            <img src=\"';\n        $$out += $escape($value.data.img);\n        $$out += '\" alt=\"\">\\r\\n        </div>\\r\\n        <div class=\"describe\">\\r\\n            <h4>';\n        $$out += $escape($value.data.title);\n        $$out += '</h4>\\r\\n            <p><img ';\n        $$out += 'src=\"http://sh1.hoopchina.com.cn/images/trademobile/quote_left.png\"';\n        $$out += ' alt=\"\">\\r\\n                <span>';\n        $$out += $escape($value.data.subtitle);\n        $$out += '</span>\\r\\n            <img ';\n        $$out += 'src=\"http://sh1.hoopchina.com.cn/images/trademobile/quote_right.png\"';\n        $$out += ' alt=\"\"></p>\\r\\n            <b>';\n        $$out += $escape($value.data.merchant);\n        $$out += '<i>\\uFFE5';\n        $$out += $escape($value.data.price);\n        $$out += '</i></b>\\r\\n        </div>\\r\\n    </li>\\r\\n    ';\n    });\n    $$out += '\\r\\n</ul>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/list.art?");
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '', $each = $imports.$each, list = $data.list, $value = $data.$value, $index = $data.$index, $escape = $imports.$escape;\n    $$out += '\\r\\n    ';\n    $each(list, function ($value, $index) {\n        $$out += '\\r\\n    <li>\\r\\n        <div class=\"picture\">\\r\\n            <img src=\"';\n        $$out += $escape($value.data.img);\n        $$out += '\" alt=\"\">\\r\\n        </div>\\r\\n        <div class=\"describe\">\\r\\n            <h4>';\n        $$out += $escape($value.data.title);\n        $$out += '</h4>\\r\\n            <p><img ';\n        $$out += 'src=\"http://sh1.hoopchina.com.cn/images/trademobile/quote_left.png\"';\n        $$out += ' alt=\"\">\\r\\n                <span>';\n        $$out += $escape($value.data.subtitle);\n        $$out += '</span>\\r\\n            <img ';\n        $$out += 'src=\"http://sh1.hoopchina.com.cn/images/trademobile/quote_right.png\"';\n        $$out += ' alt=\"\"></p>\\r\\n            <b>';\n        $$out += $escape($value.data.merchant);\n        $$out += '<i>\\uFFE5';\n        $$out += $escape($value.data.price);\n        $$out += '</i></b>\\r\\n        </div>\\r\\n    </li>\\r\\n    ';\n    });\n    $$out += '\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/list.art?");
+
+/***/ }),
+
+/***/ "./src/js/views/loading.art":
+/*!**********************************!*\
+  !*** ./src/js/views/loading.art ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<ul>\\r\\n    \\r\\n</ul>\\r\\n<div class=\"foot\">\\r\\n    <img ';\n    $$out += 'src=\"/assets/images/arrow.png\"';\n    $$out += '/>\\r\\n    <b>上拉加载更多...</b>\\r\\n</div>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/loading.art?");
+
+/***/ }),
+
+/***/ "./src/js/views/more_page.art":
+/*!************************************!*\
+  !*** ./src/js/views/more_page.art ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div>more</div>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/more_page.art?");
 
 /***/ }),
 
@@ -374,7 +499,7 @@ eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div class=\"productlist\">\\r\\n    <nav>\\r\\n        <span>推荐</span>\\r\\n        <span>篮球</span>\\r\\n        <span>跑步</span>\\r\\n        <span>健身</span>\\r\\n        <span>潮流</span>\\r\\n    </nav>\\r\\n    <div class=\"nav\">\\r\\n        <em>全部</em>\\r\\n        <em>单品推荐</em>\\r\\n        <em>原创精选</em>\\r\\n        <em>用户晒物</em>\\r\\n    </div>\\r\\n    <div class=\"adv\">\\r\\n        <div class=\"pict\">\\r\\n            <img ';\n    $$out += 'src=\"http://shihuo.hupucdn.com/ucditor/20191005/690x862_21b704777fb5897b9ecd1e33fd8d3ae5.jpeg?imageView2/0/w/600/h/600/interlace/1\"';\n    $$out += ' alt=\"\">\\r\\n        </div>\\r\\n        <div class=\"symbol\">\\r\\n            <h4>\\r\\n                签约库兹马\\uFF0C彪马篮球版图再度扩张\\r\\n            </h4>\\r\\n            <h4>\\r\\n                <img ';\n    $$out += 'src=\"http://shihuo.hupucdn.com/app/avatar/156613536210922.jpg\"';\n    $$out += ' alt=\"\">\\r\\n                <span>小想想可爱多</span>\\r\\n            </h4>\\r\\n        </div>\\r\\n    </div>\\r\\n</div>';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/productlist.art?");
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<div class=\"productlist\">\\r\\n    <nav>\\r\\n        <span>推荐</span>\\r\\n        <span>篮球</span>\\r\\n        <span>跑步</span>\\r\\n        <span>健身</span>\\r\\n        <span>潮流</span>\\r\\n    </nav>\\r\\n    <div class=\"nav\">\\r\\n        <em>全部</em>\\r\\n        <em>单品推荐</em>\\r\\n        <em>原创精选</em>\\r\\n        <em>用户晒物</em>\\r\\n    </div>\\r\\n    <div class=\"adv\">\\r\\n        <div class=\"pict\">\\r\\n            <img ';\n    $$out += 'src=\"http://shihuo.hupucdn.com/ucditor/20191005/690x862_21b704777fb5897b9ecd1e33fd8d3ae5.jpeg?imageView2/0/w/600/h/600/interlace/1\"';\n    $$out += ' alt=\"\">\\r\\n        </div>\\r\\n        <div class=\"symbol\">\\r\\n            <h4>\\r\\n                签约库兹马\\uFF0C彪马篮球版图再度扩张\\r\\n            </h4>\\r\\n            <h4>\\r\\n                <img ';\n    $$out += 'src=\"http://shihuo.hupucdn.com/app/avatar/156613536210922.jpg\"';\n    $$out += ' alt=\"\">\\r\\n                <span>小想想可爱多</span>\\r\\n            </h4>\\r\\n        </div>\\r\\n    </div>\\r\\n</div>\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/js/views/productlist.art?");
 
 /***/ }),
 

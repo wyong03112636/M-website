@@ -1,5 +1,7 @@
 .wrap-banner {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: auto; }
 
 .swiper-container {
   width: 100%;

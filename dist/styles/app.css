@@ -757,7 +757,9 @@ a {
   src: url("//at.alicdn.com/t/font_1435208_sj7fenhnytn.woff") format("woff"), url("//at.alicdn.com/t/font_1435208_sj7fenhnytn.ttf") format("truetype"); }
 
 .wrap-banner {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: auto; }
 
 .swiper-container {
   width: 100%;
@@ -771,7 +773,8 @@ a {
   top: .05rem;
   left: .10rem;
   z-index: 20;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .search {
   display: flex;
@@ -1105,3 +1108,22 @@ a {
           color: #666; }
           .wrap-list ul li .describe b i {
             color: #ff4338; }
+  .wrap-list .head,
+  .wrap-list .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: .4rem; }
+  .wrap-list .head img,
+  .wrap-list .foot img {
+    width: .16rem;
+    height: .16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms; }
+  .wrap-list .head img {
+    transform: rotate(180deg); }
+  .wrap-list .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important; }
+  .wrap-list .down {
+    transform: rotate(180deg); }

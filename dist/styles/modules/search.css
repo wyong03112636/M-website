@@ -3,7 +3,8 @@
   top: .05rem;
   left: .10rem;
   z-index: 20;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .search {
   display: flex;
