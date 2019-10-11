@@ -17,7 +17,7 @@
  * </div>
  */
 @mixin align($flexbox: flex, $justify-content: center, $align-items: center) {
-    @include flexbox($flexbox);
-    @include justify-content($justify-content);
-    @include align-items($align-items);
+  @include flexbox($flexbox);
+  @include justify-content($justify-content);
+  @include align-items($align-items);
 }

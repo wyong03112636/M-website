@@ -1,48 +1,53 @@
-const {src,dest,series,parallel,watch,gulp} = require('gulp');
+const {src,dest,series,parallel,watch} = require('gulp');
 const sass = require('gulp-sass');
 const connect = require('gulp-connect');
 const webpack = require('webpack-stream')
 const path = require('path')
 const proxy = require('http-proxy-middleware')
-  
+   
    function html(){
        return src('./src/**/*.html')
-       .pipe(dest('./dist'))
+       .pipe(dest('./dev'))
        .pipe(connect.reload())
    } 
    function js(){
-    return src('./src/js/app.js')
+    return src('./src/js/*.js')
     .pipe(webpack({
         mode:'development',
-        entry:'./src/js/app.js',
+        entry:{
+            app:'./src/js/app.js',
+            'app-search':'./src/js/app-search.js',
+            'app-profile':'./src/js/app-profile.js'
+        },
         output:{
-            path:path.resolve(__dirname, './dist'), //物理路径
-            filename:'app.js',
+            path:path.resolve(__dirname, './dev'), //物理路径
+            filename:'[name].js',
         },
         module : {
             rules :[
                 {
                     test:/\.art$/,
                     loader:'art-template-loader',
-                }
+                },
+                
             ]
         }
     }))
-    .pipe(dest('./dist/js'))
+    .pipe(dest('./dev/js'))
     .pipe(connect.reload())
 
 } 
    function css(){
-       return src(['./src/styles/**/*.scss','!./src/styles/yo/**/*.scss'])
+       return src(['./src/styles/*.scss', '!./src/styles/yo/**/*.scss'])
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('./dist/styles/'))
+        .pipe(dest('./dev/styles/'))
        .pipe(connect.reload())
 
    }
    async function server(){
        return await connect.server({
            name: 'App',
-           root:'./dist',
+           root:'./dev',
            port : 9000,
            livereload : true,
            middleware : ()=>{
@@ -65,20 +70,12 @@ const proxy = require('http-proxy-middleware')
        await watch('./src/assets/**/*', series(assets))
        await watch('./src/libs/**/*', series(libs))
    }
-//    gulp.task(watchCode, done=>{
-//         watch('./src/*.html', series(html))
-//         watch('./src/**/*.scss', series(css))
-//         watch('./src/js/**/*', series(js))
-//         watch('./src/assets/**/*', series(assets))
-//         watch('./src/libs/**/*', series(libs))
-//     done()
-//    })
    function libs () {
        return src('./src/libs/*')
-       .pipe(dest('./dist/libs'))
+       .pipe(dest('./dev/libs'))
    }
    function assets(){
        return src('./src/assets/**/*')
-       .pipe(dest('./dist/assets'))
+       .pipe(dest('./dev/assets'))
    }
 exports.default = series(parallel(html,css,js,libs,assets), parallel(server,watchCode));

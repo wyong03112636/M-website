@@ -7,11 +7,11 @@
  * @param {Color} $color 定义链接颜色 <1.0.0>
  */
 @mixin link($color: map-get($base, link-color)) {
-    color: $color;
-    cursor: pointer;
-    &:active {
-        opacity: .5;
-    }
+  color: $color;
+  cursor: pointer;
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 /**
@@ -22,12 +22,12 @@
  * @param {Boolean} $is-wrap 定义文本是否换行，默认值：true <2.0.0>
  */
 @mixin wrap($is-wrap: true) {
-    @if $is-wrap == true {
-        word-wrap: break-word;
-        word-break: break-all;
-    } @else {
-        white-space: nowrap;
-    }
+  @if $is-wrap == true {
+    word-wrap: break-word;
+    word-break: break-all;
+  } @else {
+    white-space: nowrap;
+  }
 }
 
 /**
@@ -39,18 +39,18 @@
  * @param {Integer} $line-clamp 定义需要显示的行数，默认值：1（即使用单行溢出的处理方案），需要注意的是本参数只支持webkit内核 <2.1.2>
  */
 @mixin ellipsis($width: null, $line-clamp: 1) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: $width;
-    @if abs($line-clamp) > 1 {
-        // 要使得多行截取生效，display的值只能为-webkit-box
-        display: -webkit-box !important;
-        -webkit-line-clamp: $line-clamp;
-        @include flex-direction(column);
-        @include wrap;
-    } @else {
-        @include wrap(false);
-    }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: $width;
+  @if abs($line-clamp) > 1 {
+    // 要使得多行截取生效，display的值只能为-webkit-box
+    display: -webkit-box !important;
+    -webkit-line-clamp: $line-clamp;
+    @include flex-direction(column);
+    @include wrap;
+  } @else {
+    @include wrap(false);
+  }
 }
 
 /**
@@ -61,8 +61,8 @@
  * @param {Length} $width 定义容器的宽度，默认值：null <2.0.0>
  */
 @mixin texthide($width: null) {
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: 100%;
-    width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  width: $width;
 }

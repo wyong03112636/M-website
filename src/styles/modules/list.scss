@@ -1,68 +1,68 @@
-.wrap-list{
+.wrap-list {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 0.07rem 0;
+  ul {
     width: 100%;
-    height: auto;
-    background-color: #fff;
-    padding: .07rem 0;
-    ul{
-        width: 100%;
-        li{
-            width: 100%;
-            padding: 0 .07rem;
-            display: flex;
-            justify-content: space-between;
-            .picture{
-                width: 33%;
-                img{
-                    width: 100%;
-                }
-            }
-            .describe{
-                padding: .07rem 0;
-                width: 67%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                h4{
-                    color: #444;
-                }
-                span{
-                    color: #666;
-                }
-                b{
-                    color: #666;
-                    i{
-                        color: #ff4338;
-                    }
-                }
-            }
-        }
-    }
-    .head,
-    .foot {
+    li {
+      width: 100%;
+      padding: 0 0.07rem;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: .4rem;
+      justify-content: space-between;
+      .picture {
+        width: 33%;
+        img {
+          width: 100%;
+        }
+      }
+      .describe {
+        padding: 0.07rem 0;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+          color: #444;
+        }
+        span {
+          color: #666;
+        }
+        b {
+          color: #666;
+          i {
+            color: #ff4338;
+          }
+        }
+      }
     }
-  
-    .head img,
-    .foot img {
-      width: .16rem;
-      height: .16rem;
-      transition: transform 150ms;
-      -webkit-transition: transform 150ms;
-    }
-  
-    .head img {
-      transform: rotate(180deg);
-    }
-  
-    .up {
-      transform: rotate(360deg) !important;
-      -webkit-transform: rotate(360deg) !important;
-    }
-  
-    .down {
-      transform: rotate(180deg);
-    }
+  }
+  .head,
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.4rem;
+  }
+
+  .head img,
+  .foot img {
+    width: 0.16rem;
+    height: 0.16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms;
+  }
+
+  .head img {
+    transform: rotate(180deg);
+  }
+
+  .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important;
+  }
+
+  .down {
+    transform: rotate(180deg);
+  }
 }

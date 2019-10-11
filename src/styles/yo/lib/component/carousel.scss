@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import "../fragment/yo-carousel";
-@import "../ani/fade-in";
-@import "../ani/fade-out";
+@import '../fragment/yo-carousel';
+@import '../ani/fade-in';
+@import '../ani/fade-out';
 
 // .yo-carousel{
 //     >.cont{
@@ -31,63 +31,63 @@
 // // }
 //
 .yo-carousel-fade {
-    > .cont {
-        > .item {
-            position: absolute;
-            right: 0;
-            &:first-child {
-                position: relative;
-            }
-            img {
-                opacity: 0;
-                @include transition(opacity .2s ease-in);
-            }
-        }
-        .top {
-            z-index: 99;
-            img {
-                opacity: 1;
-            }
-        }
+  > .cont {
+    > .item {
+      position: absolute;
+      right: 0;
+      &:first-child {
+        position: relative;
+      }
+      img {
+        opacity: 0;
+        @include transition(opacity 0.2s ease-in);
+      }
     }
+    .top {
+      z-index: 99;
+      img {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 //
 .yo-carousel-scale {
-    > .cont {
-        > .item {
-            @include transition(transform .4s ease-in-out .2s);
-            @include transform(scale(.7));
-        }
-        > .on {
-            @include transform(scale(1));
-        }
+  > .cont {
+    > .item {
+      @include transition(transform 0.4s ease-in-out 0.2s);
+      @include transform(scale(0.7));
     }
+    > .on {
+      @include transform(scale(1));
+    }
+  }
 }
 
 // test for inlne
 .yo-carousel {
-    > .cont {
-        @include transition(transform .5s ease-in);
-        width: 100%;
-        .item {
-            z-index: 2;
-            > img {
-                max-height: none;
-            }
-        }
-        .top {
-            z-index: 5;
-        }
+  > .cont {
+    @include transition(transform 0.5s ease-in);
+    width: 100%;
+    .item {
+      z-index: 2;
+      > img {
+        max-height: none;
+      }
     }
-    .extra-item {
-        margin-left: -100%;
+    .top {
+      z-index: 5;
     }
-    .transition {
-        @include transition(transform .5s ease-in);
-    }
-    .index{
-        z-index: 5;
-        @include transform(translate(-50%, 0) translateZ(0));
-    }
+  }
+  .extra-item {
+    margin-left: -100%;
+  }
+  .transition {
+    @include transition(transform 0.5s ease-in);
+  }
+  .index {
+    z-index: 5;
+    @include transform(translate(-50%, 0) translateZ(0));
+  }
 }

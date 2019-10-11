@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "classes";
+@import 'classes';
 
 /**
  * @module roll
@@ -7,25 +7,25 @@
  * @method roll-out-right
  */
 @-webkit-keyframes roll-out-right {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-	}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
 }
 @keyframes roll-out-right {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-		transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-	}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
 }
 
 .ani.roll-out-right {
-	-webkit-animation-name: roll-out-right;
-	animation-name: roll-out-right;
+  -webkit-animation-name: roll-out-right;
+  animation-name: roll-out-right;
 }

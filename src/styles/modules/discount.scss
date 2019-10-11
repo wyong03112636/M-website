@@ -1,28 +1,28 @@
-.wrap-discount{
+.wrap-discount {
+  width: 100%;
+  height: auto;
+  .discount {
     width: 100%;
     height: auto;
-    .discount{
-        width: 100%;
-        height: auto;
-        background-color: #fff;
-        padding: .07rem 0;
-        h4{
-            padding-left: .1rem;
-            width: 100%;
-            color: #444;
-        }
-        ul{
-            padding: 0 .07rem;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            li{
-                width: 100%;
-                flex: 1;
-                img{
-                    width: 100%;
-                }
-            }
-        }
+    background-color: #fff;
+    padding: 0.07rem 0;
+    h4 {
+      padding-left: 0.1rem;
+      width: 100%;
+      color: #444;
     }
+    ul {
+      padding: 0 0.07rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      li {
+        width: 100%;
+        flex: 1;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

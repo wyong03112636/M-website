@@ -7,7 +7,7 @@
  * @param {String} $filter 取值与`filter`属性一致 <1.7.0>
  */
 @mixin filter($filter...) {
-    @include prefix(filter, $filter);
+  @include prefix(filter, $filter);
 }
 
 /**
@@ -18,7 +18,7 @@
  * @param {String} $appearance 取值与`appearance`属性一致，默认值：none <1.0.0>
  */
 @mixin appearance($appearance: none) {
-    @include prefix(appearance, $appearance);
+  @include prefix(appearance, $appearance);
 }
 
 /**
@@ -29,7 +29,7 @@
  * @param {String} $user-select 取值与`user-select`属性一致，默认值：none <1.0.0>
  */
 @mixin user-select($user-select: none) {
-    @include prefix(user-select, $user-select);
+  @include prefix(user-select, $user-select);
 }
 
 /**
@@ -40,5 +40,5 @@
  * @param {String} $box-sizing 指定盒模型类型，取值与`box-sizing`属性一致，默认值：border-box <1.0.0>
  */
 @mixin box-sizing($box-sizing: border-box) {
-    @include prefix(box-sizing, $box-sizing);
+  @include prefix(box-sizing, $box-sizing);
 }

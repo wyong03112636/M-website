@@ -16,12 +16,12 @@
  *      <span class="item">3</span>
  * </div>
  */
-@mixin clearspace($font-size: .14rem) {
-    font-size: 0;
-    font-family: arial;
-    > .item {
-        display: inline-block;
-        font-size: $font-size;
-        font-family: map-get($base, font-family);
-    }
+@mixin clearspace($font-size: 0.14rem) {
+  font-size: 0;
+  font-family: arial;
+  > .item {
+    display: inline-block;
+    font-size: $font-size;
+    font-family: map-get($base, font-family);
+  }
 }

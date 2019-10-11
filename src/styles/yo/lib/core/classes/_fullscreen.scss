@@ -8,10 +8,10 @@
  * @param {Keywords} $position 指定定位方式，取除`static | relative`之外的值，默认值：absolute <1.8.5>
  */
 @mixin fullscreen($z-index: null, $position: absolute) {
-    position: $position;
-    z-index: $z-index;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  position: $position;
+  z-index: $z-index;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

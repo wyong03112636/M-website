@@ -7,7 +7,7 @@
  * @param {String} $transform 取值范围与`transform`属性一致 <1.0.0>
  */
 @mixin transform($transform...) {
-    @include prefix(transform, $transform);
+  @include prefix(transform, $transform);
 }
 
 /**
@@ -18,7 +18,7 @@
  * @param {Length | Percentage | Keywords} $transform-origin 取值范围与`transform-origin`属性一致 <1.0.0>
  */
 @mixin transform-origin($transform-origin) {
-    @include prefix(transform-origin, $transform-origin);
+  @include prefix(transform-origin, $transform-origin);
 }
 
 /**
@@ -29,7 +29,7 @@
  * @param {String} $transform-style 取值范围与`transform-style`属性一致 <2.0.0>
  */
 @mixin transform-style($transform-style) {
-    @include prefix(transform-style, $transform-style);
+  @include prefix(transform-style, $transform-style);
 }
 
 /**
@@ -40,7 +40,7 @@
  * @param {none | Length} $perspective 取值范围与`perspective`属性一致 <2.0.0>
  */
 @mixin perspective($perspective) {
-    @include prefix(perspective, $perspective);
+  @include prefix(perspective, $perspective);
 }
 
 /**
@@ -51,7 +51,7 @@
  * @param {Length | Percentage | Keywords} $perspective-origin 取值范围与`perspective-origin`属性一致 <2.0.0>
  */
 @mixin perspective-origin($perspective-origin) {
-    @include prefix(perspective-origin, $perspective-origin);
+  @include prefix(perspective-origin, $perspective-origin);
 }
 
 /**
@@ -62,5 +62,5 @@
  * @param {Keywords} $backface-visibility 取值范围与`backface-visibility`属性一致 <2.0.0>
  */
 @mixin backface-visibility($backface-visibility) {
-    @include prefix(backface-visibility, $backface-visibility);
+  @include prefix(backface-visibility, $backface-visibility);
 }

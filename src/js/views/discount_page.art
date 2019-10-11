@@ -1,1 +1,55 @@
-<div>优惠页面</div>
+<div class="wrap-discount-page">
+    <!-- 搜索 -->
+    <div class="sear">
+        <div class="sear-top">
+           
+            <input type="text" name="" id="" placeholder="搜索全网低价好券">
+            <span class="yo-ico">&#xe624;</span>
+        </div>
+        <div class="sear-bot">
+            <p>已收集<i>0</i>张优惠券</p>
+            <span><em>搜券指南></em></span>
+        </div>        
+    </div>
+    <!-- 品牌 -->
+    <div class="brand">
+        <div class="brand-tit">
+            <h4>品牌特卖</h4>
+            <h5>更多品牌></h5>
+        </div>
+        <div class="brand-classify">
+            <ul>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
+                    <span>
+                        运动
+                    </span>
+                </li>
+                <li>
+                        <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
+                        <span>
+                            运动
+                        </span>
+                    </li>
+                    <li>
+                            <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
+                            <span>
+                                运动
+                            </span>
+                        </li>
+                        <li>
+                                <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
+                                <span>
+                                    运动
+                                </span>
+                            </li>
+                            <li>
+                                <i class="yo-ico">&#xe774;</i>
+                                    <span>
+                                        运动
+                                    </span>
+                                </li>
+            </ul>
+        </div>
+    </div>
+</div>

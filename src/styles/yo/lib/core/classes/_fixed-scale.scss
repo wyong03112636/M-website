@@ -8,13 +8,13 @@
  * @param {Length} $scale 默认值：1/1，即正方形。用以指定内容元素的宽度高比 <3.0.10>
  */
 @mixin fixed-scale($width: 100%, $scale: 1/1) {
-    position: relative;
-    width: $width;
-    padding-bottom: $width / $scale;
-    > .cont {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
+  position: relative;
+  width: $width;
+  padding-bottom: $width / $scale;
+  > .cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }

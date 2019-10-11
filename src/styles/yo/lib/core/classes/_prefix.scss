@@ -9,14 +9,14 @@
  * @skip
  */
 @mixin prefix($property, $value) {
-    // 老式浏览器
-    // 是否开启厂商前缀支持
-    @if map-get($setting, is-vendor-prefix) {
-        // 遍历输出厂商代码
-        @each $vendor in map-get($setting, vendor-prefix) {
-            #{$vendor}#{$property}: $value;
-        }
+  // 老式浏览器
+  // 是否开启厂商前缀支持
+  @if map-get($setting, is-vendor-prefix) {
+    // 遍历输出厂商代码
+    @each $vendor in map-get($setting, vendor-prefix) {
+      #{$vendor}#{$property}: $value;
     }
-    // 现代浏览器（支持最新草案）
-    #{$property}: $value;
+  }
+  // 现代浏览器（支持最新草案）
+  #{$property}: $value;
 }

@@ -1,73 +1,73 @@
 @charset "utf-8";
-@import "../element/yo-btn";
+@import '../element/yo-btn';
 
 // 定义浮层search的基础构造
 @mixin _search {
+  @include flexbox;
+  position: relative;
+  padding: map-get($search, padding);
+  background-color: map-get($search, bgcolor);
+  font-size: map-get($search, font-size);
+  line-height: map-get($search, input-height);
+  > .action {
     @include flexbox;
+    @include flex;
     position: relative;
-    padding: map-get($search, padding);
-    background-color: map-get($search, bgcolor);
-    font-size: map-get($search, font-size);
-    line-height: map-get($search, input-height);
-    > .action {
-        @include flexbox;
-        @include flex;
-        position: relative;
-        // placeholder旁边的箭头颜色
+    // placeholder旁边的箭头颜色
+    color: map-get($search, placeholder-color);
+    > .input {
+      display: block;
+      @include appearance;
+      @include flex;
+      position: relative;
+      z-index: 1;
+      height: map-get($search, input-height);
+      padding: 0.05rem 0 0.05rem 0.1rem;
+      border: 0 none;
+      border-radius: map-get($search, input-radius);
+      background-color: map-get($search, input-bgcolor);
+      color: map-get($search, input-color);
+      vertical-align: top;
+      line-height: 1.1;
+      &::-webkit-input-placeholder {
         color: map-get($search, placeholder-color);
-        > .input {
-            display: block;
-            @include appearance;
-            @include flex;
-            position: relative;
-            z-index: 1;
-            height: map-get($search, input-height);
-            padding: .05rem 0 .05rem .1rem;
-            border: 0 none;
-            border-radius: map-get($search, input-radius);
-            background-color: map-get($search, input-bgcolor);
-            color: map-get($search, input-color);
-            vertical-align: top;
-            line-height: 1.1;
-            &::-webkit-input-placeholder {
-                color: map-get($search, placeholder-color);
-            }
-            &-shrink {
-                @include transition(margin .2s ease-out);
-                &:focus {
-                    margin-right: map-get($search, cancel-width) - .1rem;
-                }
-            }
+      }
+      &-shrink {
+        @include transition(margin 0.2s ease-out);
+        &:focus {
+          margin-right: map-get($search, cancel-width) - 0.1rem;
         }
-        > .yo-ico {
-            position: absolute;
-            z-index: 2;
-            width: .28rem;
-            text-align: center;
-        }
-        > .yo-ico + .input {
-            padding-left: .28rem;
-        }
+      }
     }
-    > .cancel {
-        position: absolute;
-        right: 0;
-        width: map-get($search, cancel-width);
-        color: map-get($search, cancel-color);
-        text-align: center;
+    > .yo-ico {
+      position: absolute;
+      z-index: 2;
+      width: 0.28rem;
+      text-align: center;
     }
-    @include yo-btn(
-        $padding: 0 .1rem,
-        $border-width: 0,
-        $bgcolor: map-get($search, btn-bgcolor),
-        $color: map-get($search, btn-color),
-        $radius: map-get($search, input-radius),
-        $height: auto
-    ) {
-        display: block;
-        min-width: .4rem;
-        margin-left: .1rem;
+    > .yo-ico + .input {
+      padding-left: 0.28rem;
     }
+  }
+  > .cancel {
+    position: absolute;
+    right: 0;
+    width: map-get($search, cancel-width);
+    color: map-get($search, cancel-color);
+    text-align: center;
+  }
+  @include yo-btn(
+    $padding: 0 0.1rem,
+    $border-width: 0,
+    $bgcolor: map-get($search, btn-bgcolor),
+    $color: map-get($search, btn-color),
+    $radius: map-get($search, input-radius),
+    $height: auto
+  ) {
+    display: block;
+    min-width: 0.4rem;
+    margin-left: 0.1rem;
+  }
 }
 
 /**
@@ -92,128 +92,129 @@
  */
 
 @mixin yo-search(
-    $name: default,
-    $padding: default,
-    $bgcolor: default,
-    $font-size: default,
-    $input-height: default,
-    $input-radius: default,
-    $input-bgcolor: default,
-    $input-color: default,
-    $placeholder-color: default,
-    $btn-bgcolor: default,
-    $btn-color: default,
-    $cancel-width: default,
-    $cancel-color: default) {
-    // 区别是否新增实例还是修改本身
-    $name: if($name == default, "", "-#{$name}");
-    // 如果值为default，则取config的定义
-    @if $padding == default {
-        $padding: map-get($search, padding);
+  $name: default,
+  $padding: default,
+  $bgcolor: default,
+  $font-size: default,
+  $input-height: default,
+  $input-radius: default,
+  $input-bgcolor: default,
+  $input-color: default,
+  $placeholder-color: default,
+  $btn-bgcolor: default,
+  $btn-color: default,
+  $cancel-width: default,
+  $cancel-color: default
+) {
+  // 区别是否新增实例还是修改本身
+  $name: if($name == default, '', '-#{$name}');
+  // 如果值为default，则取config的定义
+  @if $padding == default {
+    $padding: map-get($search, padding);
+  }
+  @if $bgcolor == default {
+    $bgcolor: map-get($search, bgcolor);
+  }
+  @if $font-size == default {
+    $font-size: map-get($search, font-size);
+  }
+  @if $input-height == default {
+    $input-height: map-get($search, input-height);
+  }
+  @if $input-radius == default {
+    $input-radius: map-get($search, input-radius);
+  }
+  @if $input-bgcolor == default {
+    $input-bgcolor: map-get($search, input-bgcolor);
+  }
+  @if $input-color == default {
+    $input-color: map-get($search, input-color);
+  }
+  @if $placeholder-color == default {
+    $placeholder-color: map-get($search, placeholder-color);
+  }
+  @if $btn-bgcolor == default {
+    $btn-bgcolor: map-get($search, btn-bgcolor);
+  }
+  @if $btn-color == default {
+    $btn-color: map-get($search, btn-color);
+  }
+  @if $cancel-width == default {
+    $cancel-width: map-get($search, cancel-width);
+  }
+  @if $cancel-color == default {
+    $cancel-color: map-get($search, cancel-color);
+  }
+  .yo-search#{$name} {
+    @if $padding != map-get($search, padding) {
+      padding: $padding;
     }
-    @if $bgcolor == default {
-        $bgcolor: map-get($search, bgcolor);
+    @if $bgcolor != map-get($search, bgcolor) {
+      background-color: $bgcolor;
     }
-    @if $font-size == default {
-        $font-size: map-get($search, font-size);
+    @if $font-size != map-get($search, font-size) {
+      font-size: $font-size;
     }
-    @if $input-height == default {
-        $input-height: map-get($search, input-height);
+    @if $input-height != map-get($search, input-height) {
+      line-height: $input-height;
     }
-    @if $input-radius == default {
-        $input-radius: map-get($search, input-radius);
-    }
-    @if $input-bgcolor == default {
-        $input-bgcolor: map-get($search, input-bgcolor);
-    }
-    @if $input-color == default {
-        $input-color: map-get($search, input-color);
-    }
-    @if $placeholder-color == default {
-        $placeholder-color: map-get($search, placeholder-color);
-    }
-    @if $btn-bgcolor == default {
-        $btn-bgcolor: map-get($search, btn-bgcolor);
-    }
-    @if $btn-color == default {
-        $btn-color: map-get($search, btn-color);
-    }
-    @if $cancel-width == default {
-        $cancel-width: map-get($search, cancel-width);
-    }
-    @if $cancel-color == default {
-        $cancel-color: map-get($search, cancel-color);
-    }
-    .yo-search#{$name} {
-        @if $padding != map-get($search, padding) {
-            padding: $padding;
-        }
-        @if $bgcolor != map-get($search, bgcolor) {
-            background-color: $bgcolor;
-        }
-        @if $font-size != map-get($search, font-size) {
-            font-size: $font-size;
-        }
+    > .action {
+      @if $placeholder-color != map-get($search, placeholder-color) {
+        color: $placeholder-color;
+      }
+      > .input {
         @if $input-height != map-get($search, input-height) {
-            line-height: $input-height;
+          height: $input-height;
         }
-        > .action {
-            @if $placeholder-color != map-get($search, placeholder-color) {
-                color: $placeholder-color;
-            }
-            > .input {
-                @if $input-height != map-get($search, input-height) {
-                    height: $input-height;
-                }
-                @if $input-radius != map-get($search, input-radius) {
-                    border-radius: $input-radius;
-                }
-                @if $input-bgcolor != map-get($search, input-bgcolor) {
-                    background-color: $input-bgcolor;
-                }
-                @if $input-color != map-get($search, input-color) {
-                    color: $input-color;
-                }
-                &::-webkit-input-placeholder {
-                    @if $placeholder-color != map-get($search, placeholder-color) {
-                        color: $placeholder-color;
-                    }
-                }
-                &-shrink {
-                    &:focus {
-                        @if $cancel-width != map-get($search, cancel-width) {
-                            margin-right: $cancel-width - .1rem;
-                        }
-                    }
-                }
-            }
+        @if $input-radius != map-get($search, input-radius) {
+          border-radius: $input-radius;
         }
-        > .cancel {
+        @if $input-bgcolor != map-get($search, input-bgcolor) {
+          background-color: $input-bgcolor;
+        }
+        @if $input-color != map-get($search, input-color) {
+          color: $input-color;
+        }
+        &::-webkit-input-placeholder {
+          @if $placeholder-color != map-get($search, placeholder-color) {
+            color: $placeholder-color;
+          }
+        }
+        &-shrink {
+          &:focus {
             @if $cancel-width != map-get($search, cancel-width) {
-                width: $cancel-width;
+              margin-right: $cancel-width - 0.1rem;
             }
-            @if $cancel-color != map-get($search, cancel-color) {
-                color: $cancel-color;
-            }
+          }
         }
-        @include yo-btn {
-            @if $btn-bgcolor != map-get($search, btn-bgcolor) {
-                background-color: $btn-bgcolor;
-            }
-            @if $btn-color != map-get($search, btn-color) {
-                color: $btn-color;
-            }
-            @if $input-radius != map-get($search, input-radius) {
-                border-radius: $input-radius;
-            }
-        }
-
-        // 增量扩展
-        @content;
+      }
     }
+    > .cancel {
+      @if $cancel-width != map-get($search, cancel-width) {
+        width: $cancel-width;
+      }
+      @if $cancel-color != map-get($search, cancel-color) {
+        color: $cancel-color;
+      }
+    }
+    @include yo-btn {
+      @if $btn-bgcolor != map-get($search, btn-bgcolor) {
+        background-color: $btn-bgcolor;
+      }
+      @if $btn-color != map-get($search, btn-color) {
+        color: $btn-color;
+      }
+      @if $input-radius != map-get($search, input-radius) {
+        border-radius: $input-radius;
+      }
+    }
+
+    // 增量扩展
+    @content;
+  }
 }
 
 // 调用本文件时载入search基础构造
 .yo-search {
-    @include _search;
+  @include _search;
 }

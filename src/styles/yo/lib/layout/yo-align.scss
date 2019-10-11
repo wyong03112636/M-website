@@ -2,8 +2,8 @@
 
 // 定义常见水平垂直居中布局
 @mixin _align {
-    @include align;
-    @include fullscreen;
+  @include align;
+  @include fullscreen;
 }
 
 /**
@@ -18,33 +18,34 @@
  */
 
 @mixin yo-align(
-    $name: default,
-    $justify-content: default,
-    $align-items: default) {
-    // 区别是否新增实例还是修改本身
-    $name: if($name == default, "", "-#{$name}");
-    // 如果值为default，则取config的定义
-    @if $justify-content == default {
-        $justify-content: map-get($align, justify-content);
+  $name: default,
+  $justify-content: default,
+  $align-items: default
+) {
+  // 区别是否新增实例还是修改本身
+  $name: if($name == default, '', '-#{$name}');
+  // 如果值为default，则取config的定义
+  @if $justify-content == default {
+    $justify-content: map-get($align, justify-content);
+  }
+  @if $align-items == default {
+    $align-items: map-get($align, align-items);
+  }
+  .yo-align#{$name} {
+    // 如果$justify-content:不等于config预设，则重绘弹性盒水平对齐方式
+    @if $justify-content != map-get($align, justify-content) {
+      @include justify-content($justify-content);
     }
-    @if $align-items == default {
-        $align-items: map-get($align, align-items);
+    // 如果$align-items不等于config预设，则重绘弹性盒垂直对齐方式
+    @if $align-items != map-get($align, align-items) {
+      @include align-items($align-items);
     }
-    .yo-align#{$name} {
-        // 如果$justify-content:不等于config预设，则重绘弹性盒水平对齐方式
-        @if $justify-content != map-get($align, justify-content) {
-            @include justify-content($justify-content);
-        }
-        // 如果$align-items不等于config预设，则重绘弹性盒垂直对齐方式
-        @if $align-items != map-get($align, align-items) {
-            @include align-items($align-items);
-        }
-        // 增量扩展
-        @content;
-    }
+    // 增量扩展
+    @content;
+  }
 }
 
 // 调用本文件时载入弹性布局基础构造
 .yo-align {
-    @include _align;
+  @include _align;
 }

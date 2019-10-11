@@ -8,8 +8,8 @@
  * @param {Length} $height 定义矩形的高度 <1.0.0>
  */
 @mixin rect($width, $height) {
-    width: $width;
-    height: $height;
+  width: $width;
+  height: $height;
 }
 
 /**
@@ -20,8 +20,8 @@
  * @param {Length} $size 定义正方形的边长 <1.0.0>
  */
 @mixin square($size) {
-    width: $size;
-    height: $size;
+  width: $size;
+  height: $size;
 }
 
 /**
@@ -33,6 +33,6 @@
  * @param {Length} $radius 定义圆的圆角半径长度 <1.0.0>
  */
 @mixin circle($size, $radius: 50%) {
-    @include square($size);
-    @include border-radius($radius);
+  @include square($size);
+  @include border-radius($radius);
 }
