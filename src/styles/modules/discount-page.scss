@@ -2,6 +2,8 @@
   width: 100%;
   height: auto;
   background: #f0f3f5;
+  overflow-y: scroll;
+  // 搜索
   .sear {
     width: 100%;
     display: flex;
@@ -50,6 +52,230 @@
           height: 0.25rem;
           width: 45%;
           color: #aaaaaa;
+        }
+      }
+    }
+  }
+  //品牌
+  .brand {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    .brand-tit {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.1rem 0.7rem;
+      h4 {
+        color: #444;
+      }
+      h5 {
+        color: #ccc;
+        font-size: 0.12rem;
+      }
+    }
+    .brand-classify{
+      width: 100%;
+      height: auto;
+      ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: .07rem;
+        li{
+          width: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: .07rem;
+          justify-content: space-around;
+          img{
+            width: 100%;
+          }
+          span{
+            font-size: .12rem;
+            color: #444444;
+          }
+          i{
+            width: 100%;
+            font-size: .45rem;
+            text-align: center;
+            
+          }
+        }
+      }
+    }
+    .brand-pic{
+      width: 100%;
+      height: auto;
+      padding-top: .1rem;
+      ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+          margin-bottom: .07rem;
+          background: url(http://shihuo.hupucdn.com/appHome/201801/0811/8b50d3b1734f11c83f911a361c96d1b9.jpg)no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          padding: .1rem;
+          width: 30%;
+          height: 1.2rem;
+          align-items: center;
+          justify-content: space-around;
+          &:nth-of-type(2){
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0612/71cd68692b56ab4bd992716e2c010270.jpg);
+            background-size: cover;
+          }
+          &:nth-of-type(3){
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0612/ecbb92938c6c2e81bf6d4825f82b5fd9.jpg);
+            background-size: cover;
+          }
+          &:nth-of-type(4){
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0811/8f97c03a7fd2604d27568b087b8b5b59.jpg);
+            background-size: cover;
+          }
+          &:nth-of-type(5){
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0811/985b1e7d8fc8eddc2a80c2b8b309ac2d.jpg);
+            background-size: cover;
+          }
+          &:nth-of-type(6){
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0612/6751d06bc35a2e370f97982491bde549.jpg);
+            background-size: cover;
+          }
+          img{
+            width: 30%;
+            border-radius: 50%;
+           
+          }
+          span{
+            color: #f0f3f5;
+            padding: .03rem;
+          }
+          p{
+            text-align: center;
+            width: 70%;
+            font-size: .12rem;
+            height: .14rem;
+            background: #ff4338;
+            color: #f0f3f5;
+            border-radius: .14rem;
+            line-height: .14rem;
+          }
+        }
+      }
+    }
+  }
+  // 推荐
+  .recommend{
+    width: 100%;
+    height: auto;
+    padding-top: .08rem;
+    .recommend-tit{
+      width: 100%;
+      display: flex;
+      padding: .1rem;
+      justify-content: space-between;
+      background: #fff;
+      align-items: center;
+      span{
+        color: #222222;
+        font-size: .14rem;
+        i{
+          padding-left: .07rem;
+          font-size: .12rem;
+          color: #aaaaaa;
+        }
+      }
+      h4{
+        padding-right: .07rem;
+        color: #aaaaaa;
+        font-size: .12rem;
+      }
+    }
+    .recommend-logo{
+      width: 100%;
+      height: auto;
+      padding: .08rem;
+      background: #fff;
+      img{
+        width: 100%;
+        border-radius:150px;
+      }
+    }
+    .recommend-classify{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: .07rem;
+      background: #fff;
+      ul{
+        padding-left: .07rem;
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        li{
+          height: .4rem;
+          line-height: .4rem;
+        }
+        .active{
+          color: #ff4338;
+          border-bottom: 1px solid #ff4338;
+        }
+      }
+      span{
+        width: 15%;
+        background: url(http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/youhui/index/tag-hide_9647888.png);
+        background-size: contain;
+      }
+    }
+    .recommend-list{
+      width: 100%;
+      height: auto;
+      background: #fff;
+      ul{
+        width: 100%;
+        height: auto;
+        li{
+          padding: .07rem .05rem;
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          .list-pic{
+            padding: .05rem;
+            width: 30%;
+            height: auto;
+            img{
+              width: 100%;
+            }
+          }
+          .list-tit{
+            width: 70%;
+            padding: .05rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // align-items: flex-start;
+            p{
+              color: #222222;
+            }
+            span{
+              color: #ff4338;
+              font-size: .16rem;
+            }
+            >div{
+              display: flex;
+              justify-content: space-between;
+              color: #aaaaaa;
+              font-size: .12rem;
+            }
+          }
         }
       }
     }

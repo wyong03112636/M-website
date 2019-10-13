@@ -29,13 +29,13 @@ class List {
     this.renderer(pro_infor);
 
     //定义图像
-    let $imgFoot = $('foot img');
+    let $imgFoot = $('.foot img');
     let bscroll = new bScroll.default($('main').get(0), {
       probeType: 2,
     });
     bscroll.on('scrollEnd', async function() {
       // 上拉加载更多
-      if (this.maxScrollY > this.y && that.res.msg === 'ok') {
+      if (this.maxScrollY >= this.y && that.res.msg === 'ok') {
         that.pageNo++;
         $imgFoot.attr('src', '/assets/images/ajax-loader.gif');
         let res = await listcount.get({
@@ -49,10 +49,11 @@ class List {
         that.renderer(that.list);
         bscroll.scrollBy(0, 40);
       }
+      bscroll.refresh()
     });
     bscroll.on('scroll', function() {
       if (this.maxScrollY > this.y) {
-        $imgFoot.addClass('down');
+        $imgFoot.addClass('up');
       }
     });
   }

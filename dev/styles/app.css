@@ -733,7 +733,7 @@ a {
     flex-direction: column;
     height: auto; }
   .container footer {
-    height: .44rem;
+    height: 0.44rem;
     background-color: #f7f7f7; }
     .container footer ul {
       display: flex;
@@ -742,7 +742,7 @@ a {
         flex: 1;
         text-align: center;
         color: #444444;
-        font-size: .14rem;
+        font-size: 0.14rem;
         display: flex;
         flex-direction: column; }
       .container footer ul .active {
@@ -753,7 +753,7 @@ a {
   width: 100%; }
 
 @font-face {
-  font-family: 'yofont';
+  font-family: "yofont";
   src: url("//at.alicdn.com/t/font_1435208_xutw4k2hjss.woff") format("woff"), url("//at.alicdn.com/t/font_1435208_xutw4k2hjss.ttf") format("truetype"); }
 
 .wrap-banner {
@@ -770,8 +770,8 @@ a {
 
 .wrap-search {
   position: absolute;
-  top: .05rem;
-  left: .10rem;
+  top: 0.05rem;
+  left: 0.1rem;
   z-index: 20;
   width: 100%;
   height: auto; }
@@ -781,31 +781,31 @@ a {
   width: 100%; }
   .search input {
     flex: 1;
-    height: .34rem;
+    height: 0.34rem;
     border-radius: 3px;
-    padding-left: .3rem;
+    padding-left: 0.3rem;
     border: none;
     position: relative; }
   .search span {
-    width: .64rem;
-    height: .34rem;
-    padding: .05rem;
+    width: 0.64rem;
+    height: 0.34rem;
+    padding: 0.05rem;
     background: url(http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/homefis/widget/header/me_0442d1d.png) no-repeat center;
-    background-size: .3rem; }
+    background-size: 0.3rem; }
   .search i {
-    width: .3rem;
-    height: .34rem;
+    width: 0.3rem;
+    height: 0.34rem;
     position: absolute;
     left: 0;
     top: 0;
     text-align: center;
-    line-height: .34rem;
-    font-size: .2rem; }
+    line-height: 0.34rem;
+    font-size: 0.2rem; }
 
 .wrap-classify {
   width: 100%;
   height: auto;
-  padding: .08rem; }
+  padding: 0.08rem; }
   .wrap-classify ul {
     display: flex;
     justify-content: space-around;
@@ -819,19 +819,19 @@ a {
       .wrap-classify ul li a {
         display: flex; }
         .wrap-classify ul li a .tit {
-          padding-top: .15rem;
+          padding-top: 0.15rem;
           flex: 1;
           flex-shrink: 1; }
           .wrap-classify ul li a .tit h3 {
             color: #444;
-            font-size: .17rem; }
+            font-size: 0.17rem; }
           .wrap-classify ul li a .tit p {
             color: #aaaaaa;
-            font-size: .12rem; }
+            font-size: 0.12rem; }
         .wrap-classify ul li a .pic {
-          padding-left: .15rem;
-          width: .7rem;
-          height: .7rem; }
+          padding-left: 0.15rem;
+          width: 0.7rem;
+          height: 0.7rem; }
           .wrap-classify ul li a .pic img {
             height: 100%; }
 
@@ -943,7 +943,7 @@ a {
 .wrap-active {
   width: 100%;
   height: auto;
-  padding: .08rem;
+  padding: 0.08rem;
   padding-top: 0; }
   .wrap-active .active {
     height: 100%; }
@@ -951,9 +951,9 @@ a {
       display: flex;
       justify-content: space-between; }
       .wrap-active .active ul li {
-        padding: .2rem;
+        padding: 0.2rem;
         background-color: #fff;
-        margin-right: .03rem; }
+        margin-right: 0.03rem; }
         .wrap-active .active ul li:nth-of-type(3) {
           margin-right: 0; }
         .wrap-active .active ul li a {
@@ -965,8 +965,8 @@ a {
           .wrap-active .active ul li a p {
             color: #aaaaaa; }
           .wrap-active .active ul li a img {
-            width: .7rem;
-            height: .7rem; }
+            width: 0.7rem;
+            height: 0.7rem; }
 
 .wrap-hotactive {
   width: 100%;
@@ -976,11 +976,11 @@ a {
     background-color: #ffffff; }
     .wrap-hotactive .hotactive .title {
       color: #222222;
-      padding-left: .1rem;
-      padding-top: .1rem;
-      height: .35rem; }
+      padding-left: 0.1rem;
+      padding-top: 0.1rem;
+      height: 0.35rem; }
     .wrap-hotactive .hotactive .content {
-      padding: .05rem; }
+      padding: 0.05rem; }
       .wrap-hotactive .hotactive .content ul {
         display: flex;
         flex-wrap: wrap; }
@@ -988,52 +988,52 @@ a {
           flex: 1; }
           .wrap-hotactive .hotactive .content ul li img {
             width: 1.2rem;
-            height: .7rem; }
+            height: 0.7rem; }
           .wrap-hotactive .hotactive .content ul li h4 {
             text-align: left;
-            font-size: .12rem; }
+            font-size: 0.12rem; }
           .wrap-hotactive .hotactive .content ul li p {
-            font-size: .1rem;
+            font-size: 0.1rem;
             text-align: center;
             color: #999999; }
 
 .wrap-productlist {
   width: 100%;
   height: auto;
-  padding: .05rem; }
+  padding: 0.05rem; }
   .wrap-productlist .productlist {
     width: 100%;
     background-color: #fff;
     height: auto; }
     .wrap-productlist .productlist nav {
-      padding: .1rem;
+      padding: 0.1rem;
       display: flex;
       justify-content: space-around; }
       .wrap-productlist .productlist nav span {
         color: #444; }
         .wrap-productlist .productlist nav span:nth-of-type(1) {
           color: orangered;
-          border-bottom: .02rem solid orangered; }
+          border-bottom: 0.02rem solid orangered; }
     .wrap-productlist .productlist .nav {
       width: 100%;
       display: flex;
       justify-content: space-around;
-      padding: .1rem; }
+      padding: 0.1rem; }
       .wrap-productlist .productlist .nav em {
-        border-radius: .03rem;
-        width: .75rem;
-        height: .25rem;
+        border-radius: 0.03rem;
+        width: 0.75rem;
+        height: 0.25rem;
         background-color: #eee;
         color: #444;
         text-align: center;
-        line-height: .25rem; }
+        line-height: 0.25rem; }
         .wrap-productlist .productlist .nav em:nth-of-type(1) {
           background: orangered;
           color: #eee; }
     .wrap-productlist .productlist .adv {
       display: flex;
       justify-content: space-between;
-      padding: .1rem;
+      padding: 0.1rem;
       width: 100%;
       height: auto; }
       .wrap-productlist .productlist .adv .pict {
@@ -1041,7 +1041,7 @@ a {
         .wrap-productlist .productlist .adv .pict img {
           width: 100%; }
       .wrap-productlist .productlist .adv .symbol {
-        padding: .07rem;
+        padding: 0.07rem;
         width: 60%;
         display: flex;
         flex-direction: column;
@@ -1049,10 +1049,10 @@ a {
         .wrap-productlist .productlist .adv .symbol h4 {
           width: 100%;
           color: #999;
-          font-size: .14rem; }
+          font-size: 0.14rem; }
           .wrap-productlist .productlist .adv .symbol h4:nth-of-type(2) img {
-            width: .25rem;
-            height: .25rem;
+            width: 0.25rem;
+            height: 0.25rem;
             border-radius: 50%; }
 
 .wrap-discount {
@@ -1062,13 +1062,13 @@ a {
     width: 100%;
     height: auto;
     background-color: #fff;
-    padding: .07rem 0; }
+    padding: 0.07rem 0; }
     .wrap-discount .discount h4 {
-      padding-left: .1rem;
+      padding-left: 0.1rem;
       width: 100%;
       color: #444; }
     .wrap-discount .discount ul {
-      padding: 0 .07rem;
+      padding: 0 0.07rem;
       display: flex;
       justify-content: space-between;
       width: 100%; }
@@ -1082,12 +1082,13 @@ a {
   width: 100%;
   height: auto;
   background-color: #fff;
-  padding: .07rem 0; }
+  padding: 0.07rem 0; }
   .wrap-list ul {
     width: 100%; }
     .wrap-list ul li {
       width: 100%;
-      padding: 0 .07rem;
+      height: 1.4rem;
+      padding: 0 0.07rem;
       display: flex;
       justify-content: space-between; }
       .wrap-list ul li .picture {
@@ -1095,7 +1096,7 @@ a {
         .wrap-list ul li .picture img {
           width: 100%; }
       .wrap-list ul li .describe {
-        padding: .07rem 0;
+        padding: 0.07rem 0;
         width: 67%;
         display: flex;
         flex-direction: column;
@@ -1113,11 +1114,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: .4rem; }
+    height: 0.4rem; }
   .wrap-list .head img,
   .wrap-list .foot img {
-    width: .16rem;
-    height: .16rem;
+    width: 0.16rem;
+    height: 0.16rem;
     transition: transform 150ms;
     -webkit-transition: transform 150ms; }
   .wrap-list .head img {
@@ -1131,37 +1132,38 @@ a {
 .wrap-discount-page {
   width: 100%;
   height: auto;
-  background: #f0f3f5; }
+  background: #f0f3f5;
+  overflow-y: scroll; }
   .wrap-discount-page .sear {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: .1rem .09rem .15rem; }
+    padding: 0.1rem 0.09rem 0.15rem; }
     .wrap-discount-page .sear .sear-top {
       position: relative; }
       .wrap-discount-page .sear .sear-top input {
         width: 100%;
         border-radius: 3px;
         border: none;
-        padding-left: .25rem;
-        height: .3rem; }
+        padding-left: 0.25rem;
+        height: 0.3rem; }
       .wrap-discount-page .sear .sear-top span {
         position: absolute;
         left: 0;
         top: 0;
-        font-size: .2rem; }
+        font-size: 0.2rem; }
     .wrap-discount-page .sear .sear-bot {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding-top: .1rem; }
+      padding-top: 0.1rem; }
       .wrap-discount-page .sear .sear-bot p {
-        font-size: .12rem;
+        font-size: 0.12rem;
         display: flex;
         align-items: center;
         flex: 1; }
         .wrap-discount-page .sear .sear-bot p i {
-          font-size: .2rem; }
+          font-size: 0.2rem; }
       .wrap-discount-page .sear .sear-bot span {
         width: 50%;
         display: flex;
@@ -1170,7 +1172,184 @@ a {
         .wrap-discount-page .sear .sear-bot span em {
           text-align: center;
           border: 1px solid #cccccc;
-          border-radius: .25rem;
-          height: .25rem;
+          border-radius: 0.25rem;
+          height: 0.25rem;
           width: 45%;
           color: #aaaaaa; }
+  .wrap-discount-page .brand {
+    width: 100%;
+    height: auto;
+    background: #fff; }
+    .wrap-discount-page .brand .brand-tit {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.1rem 0.7rem; }
+      .wrap-discount-page .brand .brand-tit h4 {
+        color: #444; }
+      .wrap-discount-page .brand .brand-tit h5 {
+        color: #ccc;
+        font-size: 0.12rem; }
+    .wrap-discount-page .brand .brand-classify {
+      width: 100%;
+      height: auto; }
+      .wrap-discount-page .brand .brand-classify ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: .07rem; }
+        .wrap-discount-page .brand .brand-classify ul li {
+          width: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: .07rem;
+          justify-content: space-around; }
+          .wrap-discount-page .brand .brand-classify ul li img {
+            width: 100%; }
+          .wrap-discount-page .brand .brand-classify ul li span {
+            font-size: .12rem;
+            color: #444444; }
+          .wrap-discount-page .brand .brand-classify ul li i {
+            width: 100%;
+            font-size: .45rem;
+            text-align: center; }
+    .wrap-discount-page .brand .brand-pic {
+      width: 100%;
+      height: auto;
+      padding-top: .1rem; }
+      .wrap-discount-page .brand .brand-pic ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        .wrap-discount-page .brand .brand-pic ul li {
+          margin-bottom: .07rem;
+          background: url(http://shihuo.hupucdn.com/appHome/201801/0811/8b50d3b1734f11c83f911a361c96d1b9.jpg) no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          padding: .1rem;
+          width: 30%;
+          height: 1.2rem;
+          align-items: center;
+          justify-content: space-around; }
+          .wrap-discount-page .brand .brand-pic ul li:nth-of-type(2) {
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0612/71cd68692b56ab4bd992716e2c010270.jpg);
+            background-size: cover; }
+          .wrap-discount-page .brand .brand-pic ul li:nth-of-type(3) {
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0612/ecbb92938c6c2e81bf6d4825f82b5fd9.jpg);
+            background-size: cover; }
+          .wrap-discount-page .brand .brand-pic ul li:nth-of-type(4) {
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0811/8f97c03a7fd2604d27568b087b8b5b59.jpg);
+            background-size: cover; }
+          .wrap-discount-page .brand .brand-pic ul li:nth-of-type(5) {
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0811/985b1e7d8fc8eddc2a80c2b8b309ac2d.jpg);
+            background-size: cover; }
+          .wrap-discount-page .brand .brand-pic ul li:nth-of-type(6) {
+            background: url(http://shihuo.hupucdn.com/appHome/201801/0612/6751d06bc35a2e370f97982491bde549.jpg);
+            background-size: cover; }
+          .wrap-discount-page .brand .brand-pic ul li img {
+            width: 30%;
+            border-radius: 50%; }
+          .wrap-discount-page .brand .brand-pic ul li span {
+            color: #f0f3f5;
+            padding: .03rem; }
+          .wrap-discount-page .brand .brand-pic ul li p {
+            text-align: center;
+            width: 70%;
+            font-size: .12rem;
+            height: .14rem;
+            background: #ff4338;
+            color: #f0f3f5;
+            border-radius: .14rem;
+            line-height: .14rem; }
+  .wrap-discount-page .recommend {
+    width: 100%;
+    height: auto;
+    padding-top: .08rem; }
+    .wrap-discount-page .recommend .recommend-tit {
+      width: 100%;
+      display: flex;
+      padding: .1rem;
+      justify-content: space-between;
+      background: #fff;
+      align-items: center; }
+      .wrap-discount-page .recommend .recommend-tit span {
+        color: #222222;
+        font-size: .14rem; }
+        .wrap-discount-page .recommend .recommend-tit span i {
+          padding-left: .07rem;
+          font-size: .12rem;
+          color: #aaaaaa; }
+      .wrap-discount-page .recommend .recommend-tit h4 {
+        padding-right: .07rem;
+        color: #aaaaaa;
+        font-size: .12rem; }
+    .wrap-discount-page .recommend .recommend-logo {
+      width: 100%;
+      height: auto;
+      padding: .08rem;
+      background: #fff; }
+      .wrap-discount-page .recommend .recommend-logo img {
+        width: 100%;
+        border-radius: 150px; }
+    .wrap-discount-page .recommend .recommend-classify {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: .07rem;
+      background: #fff; }
+      .wrap-discount-page .recommend .recommend-classify ul {
+        padding-left: .07rem;
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: space-between; }
+        .wrap-discount-page .recommend .recommend-classify ul li {
+          height: .4rem;
+          line-height: .4rem; }
+        .wrap-discount-page .recommend .recommend-classify ul .active {
+          color: #ff4338;
+          border-bottom: 1px solid #ff4338; }
+      .wrap-discount-page .recommend .recommend-classify span {
+        width: 15%;
+        background: url(http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/youhui/index/tag-hide_9647888.png);
+        background-size: contain; }
+    .wrap-discount-page .recommend .recommend-list {
+      width: 100%;
+      height: auto;
+      background: #fff; }
+      .wrap-discount-page .recommend .recommend-list ul {
+        width: 100%;
+        height: auto; }
+        .wrap-discount-page .recommend .recommend-list ul li {
+          padding: .07rem .05rem;
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between; }
+          .wrap-discount-page .recommend .recommend-list ul li .list-pic {
+            padding: .05rem;
+            width: 30%;
+            height: auto; }
+            .wrap-discount-page .recommend .recommend-list ul li .list-pic img {
+              width: 100%; }
+          .wrap-discount-page .recommend .recommend-list ul li .list-tit {
+            width: 70%;
+            padding: .05rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+            .wrap-discount-page .recommend .recommend-list ul li .list-tit p {
+              color: #222222; }
+            .wrap-discount-page .recommend .recommend-list ul li .list-tit span {
+              color: #ff4338;
+              font-size: .16rem; }
+            .wrap-discount-page .recommend .recommend-list ul li .list-tit > div {
+              display: flex;
+              justify-content: space-between;
+              color: #aaaaaa;
+              font-size: .12rem; }

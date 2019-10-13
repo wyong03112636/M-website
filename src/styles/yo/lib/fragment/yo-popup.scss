@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import 'yo-modal';
-@import 'yo-header';
+@import "yo-modal";
+@import "yo-header";
 
 // 定义popup的基础构造
 @mixin _popup {
@@ -38,7 +38,7 @@
 
 @mixin yo-popup($name: default, $height: default, $bgcolor: default) {
   // 区别是否新增实例还是修改本身
-  $name: if($name == default, '', '-#{$name}');
+  $name: if($name == default, "", "-#{$name}");
   // 如果值为default，则取config的定义
   @if $height == default {
     $height: map-get($popup, height);

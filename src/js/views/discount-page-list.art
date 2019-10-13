@@ -1,0 +1,17 @@
+{{each list}}
+<li>
+    <div class="list-pic">
+        <img src="{{$value.img}}" alt="">
+    </div>
+    <div class="list-tit">
+        <p>{{$value.title}}</p>
+        <span>
+            {{$value.subtitle}}
+        </span>
+        <div>
+            <em>{{$value.business}}</em>
+            <b>{{$value.data}}</b>
+        </div>
+    </div>
+</li>
+{{/each}}

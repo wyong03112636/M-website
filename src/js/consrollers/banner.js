@@ -1,10 +1,10 @@
-const banner = require('../views/banner.art');
+const banner = require("../views/banner.art");
 
 class Banner {
   constructor() {}
   render() {
     const html = banner({});
-    $('.wrap-banner').html(html);
+    $(".wrap-banner").html(html);
   }
 }
 export default new Banner();

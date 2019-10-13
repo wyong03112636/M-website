@@ -10,13 +10,13 @@
 // 基本设置
 $_setting: (
   // {String} 版本号
-    version: '3.1.0',
+    version: "3.1.0",
   // {Boolean} 是否开启厂商前缀
     is-vendor-prefix: true,
   // {String} 厂商前缀
     vendor-prefix: -webkit-,
   // {String} 背景图片服务器
-    bgimg-domain: '//s.qunarzz.com/yo/bgimg/',
+    bgimg-domain: "//s.qunarzz.com/yo/bgimg/",
   // {Boolean} 是否允许横竖屏时文本字号自动调整
     is-text-size-adjust: true,
   // {Boolean} 是否显示页面滚动条
@@ -26,45 +26,45 @@ $_setting: (
 // responsive media types
 $_media-types: (
   // {String} 横屏
-    landscape: '(orientation: landscape)',
+    landscape: "(orientation: landscape)",
   // {String} 竖屏
-    portrait: '(orientation: portrait)',
+    portrait: "(orientation: portrait)",
   // 视网膜屏定义，这里不做非常细节的界定，比如完全一致的整数倍
     // retina1x：< 1.5dppx；
     // retina2x：1.5dppx ~ 2.49dppx
     // retina3x：>= 2.5dppx
     // {String} 非视网膜屏
     retina1x:
-    '(max--moz-device-pixel-ratio: 1.49),
+    "(max--moz-device-pixel-ratio: 1.49),
                 (-webkit-max-device-pixel-ratio: 1.49),
                 (max-device-pixel-ratio: 1.49),
                 (max-resolution: 143dpi),
-                (max-resolution: 1.49dppx)',
+                (max-resolution: 1.49dppx)",
   // {String} 视网膜屏2x
     retina2x:
-    '(min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49),
+    "(min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49),
                 (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49),
                 (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49),
                 (min-resolution: 144dpi) and (max-resolution: 239dpi),
-                (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx)',
+                (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx)",
   // {String} 视网膜屏3x
     retina3x:
-    '(min--moz-device-pixel-ratio: 2.5),
+    "(min--moz-device-pixel-ratio: 2.5),
                 (-webkit-min-device-pixel-ratio: 2.5),
                 (min-device-pixel-ratio: 2.5),
                 (min-resolution: 240dpi),
-                (min-resolution: 2.5dppx)',
+                (min-resolution: 2.5dppx)",
   // 待添加stop-points
     // 用于常规手机横竖屏
-    xs: '(max-width: 767px)',
+    xs: "(max-width: 767px)",
   // 用于常规pad横竖屏
-    s: '(min-width: 768px) and (max-width: 1024px)',
+    s: "(min-width: 768px) and (max-width: 1024px)",
   // 用于常规笔记本
-    m: '(min-width: 1025px) and (max-width: 1280px)',
+    m: "(min-width: 1025px) and (max-width: 1280px)",
   // 用于常规台式机
-    l: '(min-width: 1281px) and (max-width: 1440px)',
+    l: "(min-width: 1281px) and (max-width: 1440px)",
   // 用于超大台式机
-    xl: '(min-width: 1441px)'
+    xl: "(min-width: 1441px)"
 );
 
 // ico font
@@ -74,7 +74,7 @@ $_ico: (
   // {String} 图标字体文件名
     font-name: yofont,
   // {Url} 图标字体路径
-    font-path: '//ss.qunarzz.com/yo/font/1.0.3/'
+    font-path: "//ss.qunarzz.com/yo/font/1.0.3/"
 );
 
 // z-index
@@ -160,7 +160,7 @@ $_btn: (
 // Element checked(11)
 $_checked: (
   // {String} 选中标记的内容，可以是自定义的iconfont编码
-    content: '\f078',
+    content: "\f078",
   // {Length} 元件大小
     size: 0.2rem,
   // {Length} 标签大小
@@ -195,7 +195,7 @@ $_loading: (
     font-size: null,
   // {Color} 文本颜色
     color: map-get($base, color),
-  // {String} loading符号，可以是自定义的iconfont编码 content: '\f089'
+  // {String} loading符号，可以是自定义的iconfont编码 content: "\f089"
 );
 
 // Element loadtip(3)
@@ -255,7 +255,7 @@ $_breadcrumb: (
   // {Color} 面包屑文本色
     color: map-get($base, color),
   // {Color} 面包屑间隔色 arrow-color: #ccc,
-  // {String} 面包屑间隔符号，可以是自定义的iconfont编码 arrow-content: '\f07f',
+  // {String} 面包屑间隔符号，可以是自定义的iconfont编码 arrow-content: "\f07f",
   // {Length} 面包屑子项间隙 item-space: 0.05rem
 );
 
@@ -480,7 +480,7 @@ $_rating: (
   // {Length} 子项间间隙
     item-space: 0.1rem,
   // {String} 图片URL
-    url: 'star3.png'
+    url: "star3.png"
 );
 
 // Fragment search(12)

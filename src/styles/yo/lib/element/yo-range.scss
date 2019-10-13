@@ -41,7 +41,7 @@
       &::before,
       &::after {
         display: block;
-        content: '\0020';
+        content: "\0020";
       }
       // 进度色轴
       &::before {
@@ -52,7 +52,7 @@
         height: map-get($range, track-height);
         @include transform(translatey(-50%));
         background-color: map-get($range, on-track-color);
-        content: '\0020';
+        content: "\0020";
       }
       &:not(:only-child):first-child {
         z-index: 1;
@@ -103,7 +103,7 @@
   $thumb-color: default
 ) {
   // 区别是否新增实例还是修改本身
-  $name: if($name == default, '', '-#{$name}');
+  $name: if($name == default, "", "-#{$name}");
   // 如果值为default，则取config的定义
   @if $track-height == default {
     $track-height: map-get($range, track-height);

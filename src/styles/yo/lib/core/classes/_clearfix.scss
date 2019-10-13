@@ -14,7 +14,7 @@
       overflow: hidden;
       clear: both;
       height: 0;
-      content: '\0020';
+      content: "\0020";
     }
   } @else {
     // 创建BFC用以清除自身浮动

@@ -14,10 +14,12 @@ class IndexView {
   bindEvent() {
     location.hash = $(this).attr('data-page');
   }
-  async render() {
-    const html = await layoutViews({});
-    console.log(html);
+  render() {
+    const html =  layoutViews({});
     $('#root').html(html);
+    $('footer ul').on('click', 'li', this.bindEvent);
+  }
+  loadIndexModel(){
     activeController.render();
     bannerController.render();
     new Swiper.default('.swiper-container', {
@@ -33,8 +35,7 @@ class IndexView {
     listController.render();
     productlistController.render();
     searchController.render();
-
-    $('footer ul').on('click', 'li', this.bindEvent);
   }
+  
 }
 export default new IndexView();

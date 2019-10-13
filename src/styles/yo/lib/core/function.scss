@@ -13,7 +13,7 @@
  */
 @function first($list) {
   $length: length($list);
-  $value: '';
+  $value: "";
 
   @if type-of($list) != list {
     @warn "`$list` of `first($list)` must be a list type.";
@@ -35,7 +35,7 @@
  */
 @function last($list) {
   $length: length($list);
-  $value: '';
+  $value: "";
 
   @if type-of($list) != list {
     @warn "`$list` of `last($list)` must be a list type.";
@@ -58,7 +58,7 @@
  */
 @function nth-last($list, $index) {
   $length: length($list);
-  $value: '';
+  $value: "";
 
   @if type-of($list) != list {
     @warn "$list of `nth-last($list, $index)` must be a list type.";

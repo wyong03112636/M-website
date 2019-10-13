@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import 'yo-modal';
+@import "yo-modal";
 
 // 定义picker的基础构造
 @mixin _picker {
@@ -40,7 +40,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    content: '\0020';
+    content: "\0020";
     pointer-events: none;
     background: -webkit-linear-gradient(
       top,
@@ -56,7 +56,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    content: '.';
+    content: ".";
     color: transparent;
     border: 1px solid map-get($picker, border-color);
     border-width: 1px 0;
@@ -98,7 +98,7 @@
   $border-color: default
 ) {
   // 区别是否新增实例还是修改本身
-  $name: if($name == default, '', '-#{$name}');
+  $name: if($name == default, "", "-#{$name}");
   // 如果值为default，则取config的定义
   @if $item == default {
     $item: map-get($picker, item);

@@ -4,6 +4,7 @@ import discoverController from '../consrollers/discover_page';
 import equipController from '../consrollers/equip_page';
 import moreController from '../consrollers/more_page';
 
+
 class Router {
   constructor() {
     this.bindEvent();
@@ -21,6 +22,9 @@ class Router {
       moreController,
     };
     pageController[hash + 'Controller'].render();
+    if(hash === 'index'){
+      indexController.loadIndexModel();
+    }
   }
   setAciveClass(hash) {
     $(`footer li[data-page=${hash}]`)
@@ -28,8 +32,8 @@ class Router {
       .siblings()
       .removeClass('active');
   }
-  async hanelLoadPage() {
-    await indexController.render();
+  hanelLoadPage() {
+    indexController.render()
     let hash = location.hash.substr(1) || 'index';
     location.hash = hash;
     this.renderDom(hash);

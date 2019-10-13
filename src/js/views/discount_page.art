@@ -26,29 +26,88 @@
                     </span>
                 </li>
                 <li>
-                        <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
-                        <span>
-                            运动
-                        </span>
-                    </li>
-                    <li>
-                            <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
-                            <span>
-                                运动
-                            </span>
-                        </li>
-                        <li>
-                                <img src="http://shihuo.hupucdn.com/appHome/201711/0113/705803887a16991348788bc77ef96298.png" alt="">
-                                <span>
-                                    运动
-                                </span>
-                            </li>
-                            <li>
-                                <i class="yo-ico">&#xe774;</i>
-                                    <span>
-                                        运动
-                                    </span>
-                                </li>
+                    <img src="http://shihuo.hupucdn.com/appHome/201711/0113/ed229a3887b997986de9d2fa99968f2c.png" alt="">
+                    <span>
+                        休闲
+                    </span>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/appHome/201711/0113/3be9bb6590b50ae4c2c823353ebd1bb9.png" alt="">
+                    <span>
+                        户外
+                    </span>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/appHome/201711/0113/26a9c61773702db21dbe4b9d9a5bed60.png" alt="">
+                    <span>
+                        数码
+                    </span>
+                </li>
+                <li>
+                <i class="yo-ico">&#xe774;</i>
+                    <span>
+                        更多
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="brand-pic">
+            <ul>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/goods/style/201708/1716/a8418a3ae650e7c5c76eea45f2a2bcc1.png" alt="">
+                    <span>日高</span>
+                    <p>定金50抵450</p>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/goods/style/201708/1716/4ef177124aa7ba5eb5d6ef5c135ae057.png" alt="">
+                    <span>匹克</span>
+                    <p>不止五折</p>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/newslogo/201710/1814/cd232408542a3bafc7eb464f74909171.jpg" alt="">
+                    <span>dickies</span>
+                    <p>满11减10元</p>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/goods/style/201708/1716/6c79a6f7612a56c851451ca0f0929025.png" alt="">
+                    <span>名宣</span>
+                    <p>定金50抵450</p>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/goods/style/201708/1716/bf41e50f5ace374682d8f9e104a9a953.png" alt="">
+                    <span>UA</span>
+                    <p>定金50抵450</p>
+                </li>
+                <li>
+                    <img src="http://shihuo.hupucdn.com/newslogo/201710/2312/e08733467eb951d4ff57debfbf97396e.jpg" alt="">
+                    <span>Sony索尼</span>
+                    <p>定金50抵450</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 每日推荐 -->
+    <div class="recommend">
+        <div class="recommend-tit">
+            <span>超值9块9<i>24小时淘不停</i></span>
+            <h4>更多商品></h4>
+        </div>
+        <div class="recommend-logo">
+            <img src="http://shihuo.hupucdn.com/appHome/201902/0323/6de7db22aecf585cf2544cafd24c2bf9.png" alt="">
+        </div>
+        <div class="recommend-classify">
+            <ul>
+                <li class="active">精选</li>
+                <li>鞋类</li>
+                <li>服饰</li>
+                <li>数码</li>
+                <li>兴趣</li>
+            </ul>
+            <span></span>
+        </div>
+        <div class="recommend-list">
+            <ul>
+               
             </ul>
         </div>
     </div>

@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import './list';
-@import '../element/yo-checked';
-@import '../ani/fade-in-right';
+@import "./list";
+@import "../element/yo-checked";
+@import "../ani/fade-in-right";
 
 .yo-multilist {
   @include flexbox;
@@ -29,7 +29,7 @@
     }
     @include yo-checked(
       $name: dot,
-      $content: '\f083',
+      $content: "\f083",
       $on-color: $active-color
     ) {
       margin-left: -0.1rem;
@@ -60,7 +60,7 @@
           position: absolute;
           top: 50%;
           right: -3px;
-          content: ' ';
+          content: " ";
           width: 6px;
           height: 6px;
           border-top: 1px solid $line-color;
@@ -88,7 +88,7 @@
             content: none;
           }
           &:after {
-            content: '';
+            content: "";
           }
         }
       }

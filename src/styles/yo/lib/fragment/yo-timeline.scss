@@ -39,7 +39,7 @@
     &::after {
       position: absolute;
       top: map-get($timeline, point-top);
-      content: '\0020';
+      content: "\0020";
     }
     &::after {
       right: -#{map-get($timeline, point-size) / 2};
@@ -94,7 +94,7 @@
   $first-item-color: default
 ) {
   // 区别是否新增实例还是修改本身
-  $name: if($name == default, '', '-#{$name}');
+  $name: if($name == default, "", "-#{$name}");
   // 如果值为default，则取config的定义
   @if $padding == default {
     $padding: map-get($timeline, padding);

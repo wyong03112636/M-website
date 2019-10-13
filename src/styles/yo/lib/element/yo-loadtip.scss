@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import '../ani/rotate';
+@import "../ani/rotate";
 
 // 定义loadtip的基础构造
 @mixin _loadtip {
@@ -50,7 +50,7 @@
   $ico-color: default
 ) {
   // 区别是否新增实例还是修改本身
-  $name: if($name == default, '', '-#{$name}');
+  $name: if($name == default, "", "-#{$name}");
   // 如果值为default，则取config的定义
   @if $color == default {
     $color: map-get($loadtip, color);

@@ -8,9 +8,9 @@
  */
 @mixin flexbox($flexbox: flex) {
   @if $flexbox == inline-flex {
-    $flexbox: 'inline-';
+    $flexbox: "inline-";
   } @else {
-    $flexbox: '';
+    $flexbox: "";
   }
   // 老式浏览器（实验性质支持3个阶段草案）
   // 原始草案：20090723
