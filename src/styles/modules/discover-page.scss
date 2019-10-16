@@ -1,0 +1,170 @@
+.wrap-discover-page{
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    // banner
+    .swiper-container{
+        width: 100%;
+        height: 1.6rem;
+    }
+    // 分类
+    .discover-classify{
+        width: 100%;
+        height: auto;
+        background: #fff;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: .07rem;
+                img{
+                    width: 60%;
+                }
+                a{     
+                    color: #666666;  
+                    font-size: .14rem;
+                }
+            }
+        }
+    }
+    // 话题
+    .discover-talk{
+        width: 100%;
+        height: auto;
+        padding: .08rem 0;
+        h4{
+            padding: .1rem;
+            color: #444444;
+            background: #fff;
+        }
+        .discover-scroll{
+            width: 100%;
+            overflow-x: scroll;
+            ul{
+                background: #fff;
+                display: flex;
+                justify-content: start;
+                width: 120%;
+                li{
+                    &:nth-of-type(1){
+                        background: url(http://shihuo.hupucdn.com/appHome/201811/1020/95e951e28bf1a30b58c03204e11e16a6.jpg) no-repeat center;
+                        background-size:cover;
+                    }
+                    &:nth-of-type(2){
+                        background: url(http://shihuo.hupucdn.com/column/201812/2919/08a6f969e4e07d33209b8ba948ed425c.png) no-repeat center;
+                        background-size:cover;
+                    }
+                    &:nth-of-type(3){
+                        background: url( http://shihuo.hupucdn.com/column/201811/2215/2e79d7e6da19d652db2c54020574701e.jpg) no-repeat center;
+                        background-size:cover;
+                    }
+                    &:nth-of-type(4){
+                        background: #ccc;
+                        p {
+                            color: #fff;
+                        }
+                    }
+                    flex-shrink: 0;
+                    padding: .15rem ;
+                    width: 1.5rem;
+                    p{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+       
+    }
+    //推荐
+    .discover-recommend{
+        width:100%;
+        height: auto;
+        padding: .07rem;
+        overflow-x: scroll;
+        background: #fff;
+        ul{
+            width: 180%;
+            display: flex;
+            justify-content: flex-start;
+           
+            li{
+                width: 20%;
+                padding: 0 .15rem;
+                color: #444444;
+                text-align: center;
+            }
+            .active{
+                color: #ff438f;
+            }
+        }
+    }
+    // list
+    .discover-list{
+        width: 100%;
+        height: auto;
+        background: #fff;
+        ul{
+            width: 100%;
+            li{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .discover-left{
+                    width: 15%;
+                    
+                    img{
+                        width: 75%;
+                        border-radius: 50%;
+                    }
+                }
+                .discover-right{
+                    width: 85%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h3{
+                        padding: .07rem;
+                        font-size: .16rem;
+                        color: #444444;
+                    }
+                    h4{
+                        padding: .07rem;
+                        font-size: .14rem;
+                        color: #777777;
+                    }
+                    p{
+                        padding: .07rem;
+                        font-size: .12rem;
+                        color: #999999;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    .review{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding-top: .08rem;
+                        width: 100%;
+                        i{  
+                            padding: .07rem;
+                            font-size: .18rem;
+                            color: #666666;
+                        }
+                        span{
+                            font-size: .18rem;
+                            &:nth-last-of-type(1){
+                                padding-left: .07rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

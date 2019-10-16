@@ -1,1 +1,85 @@
-<div>discover</div>
+<div class="wrap-discover-page">
+    <!-- banner -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/appHome/201812/1300/0767ee290a165c7c519696b8c047436c.jpg?imageView2/2/w/750/h/268/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/appHome/201812/0920/b42ed3c3eca82633072c47a1bf3b53a9.jpg?imageView2/2/w/750/h/268/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/appHome/201812/0900/d31d0002502c7181c272e5bac796375e.jpg?imageView2/2/w/750/h/268/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/appHome/201811/1200/843bce9c5e893f33ccb55e1e7acd61fd.jpg?imageView2/2/w/750/h/268/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/appHome/201901/0909/246bc13aad8b60058a81d242512e983f.png?imageView2/2/w/750/h/380/interlace/1" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 分类 -->
+    <div class="discover-classify">
+        <ul>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/find/index/icon-zhongce_65770bc.png" alt="">
+                <a href="#">
+                众测
+            </a></li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/find/index/icon-huati_624fa93.png" alt="">
+                <a href="#">
+                栏目
+            </a></li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/find/index/icon-new_86b6c1f.png" alt=""><a href="#">
+                最新
+            </a></li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/find/index/icon-hot_2a01f3a.png" alt=""><a href="#">
+                最热
+            </a></li>
+        </ul>
+    </div>
+    <!-- 话题 -->
+    <div class="discover-talk">
+        <h4>热门话题</h4>
+        <div class="discover-scroll">
+            <ul>
+                <li>
+                    <p>
+                        #限时下单 全场返利#
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        # 晒照赢新年康扣 #
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        #限时下单 全场返利#
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        产看更多...
+                    </p>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    <!-- 推荐 -->
+    <div class="discover-recommend">
+        <ul>
+            <li class="active">今日推荐</li>
+            <li>篮球</li>
+            <li>视频</li>
+            <li>最新资讯</li>
+            <li>潮流风向</li>
+            <li>3C新传奇</li>
+            <li>潮鞋志</li>
+            <li>球鞋90秒</li>
+        </ul>
+    </div>
+    <!-- list -->
+    <div class="discover-list" >
+        <ul>
+           
+        </ul>
+    </div>
+</div>

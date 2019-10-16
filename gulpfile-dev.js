@@ -50,6 +50,7 @@ const proxy = require('http-proxy-middleware')
            root:'./dev',
            port : 9000,
            livereload : true,
+        //    host:'10.9.49.200',
            middleware : ()=>{
                return [
                     proxy('/api', {

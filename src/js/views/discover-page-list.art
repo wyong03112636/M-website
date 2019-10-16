@@ -1,0 +1,17 @@
+{{each res}}
+    <li>
+        <div class="discover-left">
+            <img src="http://shihuo.hupucdn.com/wx_user/avatar/1546993547/442a937ad5e382f288ab38f28d8bc8ef?imageView2/0/w/68/h/68/interlace/1" alt="">
+        </div>
+         <div class="discover-right">
+            <h3>{{$value.data.author_name}}</h3>
+            <h4>{{$value.data.date}}</h4>
+            <p>{{$value.data.title}}</p>
+            <img src="{{$value.data.img}}" alt="">
+            <div class="review">
+                <span class="yo-ico">&#xe61d;</span><i>{{$value.data.praise}}</i>
+                <span class="yo-ico">&#xe635;</span><i>{{$value.data.reply_count}}</i>
+            </div>
+        </div>
+    </li>
+{{/each}}

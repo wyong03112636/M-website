@@ -2,7 +2,6 @@
   width: 100%;
   height: auto;
   background: #f0f3f5;
-  overflow-y: scroll;
   // 搜索
   .sear {
     width: 100%;
@@ -278,6 +277,34 @@
           }
         }
       }
+      .head,
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.4rem;
+  }
+
+  .head img,
+  .foot img {
+    width: 0.16rem;
+    height: 0.16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms;
+  }
+
+  .head img {
+    transform: rotate(180deg);
+  }
+
+  .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important;
+  }
+
+  .down {
+    transform: rotate(180deg);
+  }
     }
   }
 }

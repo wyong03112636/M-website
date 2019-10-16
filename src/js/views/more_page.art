@@ -1,1 +1,41 @@
-<div>more</div>
+<div class="wrap-more">
+    <div class="more-login">
+        <div class="login-pic">
+            <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/head_02977e3.png" alt="">
+        </div>
+        <div class="login-content">
+            <div><span>登录</span><span>注册</span></div>
+            <h4>金币 0</h4>
+        </div>
+    </div>
+    <div class="more-mine">
+        <h4>我的识货</h4>
+        <ul>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/images/trade/app/personal/collect_content.png" alt="">
+                <span>我的收藏</span>
+            </li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/images/trade/app/personal/my_shaiwu.png" alt="">
+                <span>我的晒物</span>
+            </li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/images/trade/app/personal/kaiquan.png" alt="">
+                <span>我的礼品</span>
+            </li>
+        </ul>
+    </div>
+    <div class="more-ready">
+        <h4>识货必备</h4>
+        <ul>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/images/trade/app/personal/tuijiandianpu.png" alt="">
+                <span>推荐店铺</span>
+            </li>
+            <li>
+                    <img src="http://sh1.hoopchina.com.cn/images/trade/app/personal/select_shoe.png" alt="">
+                    <span>黑科技选鞋</span>
+                </li>
+        </ul>
+    </div>
+</div>

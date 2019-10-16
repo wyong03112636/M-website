@@ -1,0 +1,83 @@
+.wrap-more{
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    .more-login{
+        width: 100%;
+        height: auto;
+        background: #444444;
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        .login-pic{
+            width: 20%;
+            padding: .07rem;
+            img{
+                width: 80%;
+            }
+        }
+        .login-content{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            >div{
+                span{
+                    color: #f7f7f7;
+                    padding-right: .09rem;
+                }
+            }
+            h4{
+                color: #f7f7f7;
+            }
+        }
+    }
+    .more-mine{
+        width: 100%;
+        background: #ffffff;
+        h4{
+            padding: .07rem;
+            color: #999999;
+        }
+        ul{
+            padding: .07rem;
+            width: 75%;
+            display: flex;
+            justify-content: space-around;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                img{
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .more-ready{
+        width: 100%;
+        height: auto;
+        background: #ffffff;
+        padding: .07rem;
+        margin-top: .05rem;
+        h4{
+            padding: .07rem;
+            color: #999999;
+        }
+        ul{
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                img{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

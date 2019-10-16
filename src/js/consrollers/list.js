@@ -35,7 +35,7 @@ class List {
     });
     bscroll.on('scrollEnd', async function() {
       // 上拉加载更多
-      if (this.maxScrollY >= this.y && that.res.msg === 'ok') {
+      if (this.maxScrollY >= this.y && that.res.msg === 'ok' && location.hash === '#index') {
         that.pageNo++;
         $imgFoot.attr('src', '/assets/images/ajax-loader.gif');
         let res = await listcount.get({
