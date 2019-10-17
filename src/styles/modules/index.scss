@@ -10,10 +10,10 @@
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
   }
   footer {
-    height: 0.44rem;
+    height: .44rem;
     background-color: #f7f7f7;
     ul {
       display: flex;

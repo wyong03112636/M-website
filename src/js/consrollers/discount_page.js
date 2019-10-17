@@ -10,10 +10,9 @@ class DiscountPage {
     let dislist = listView({list})
     $('.recommend-list ul').html(dislist)
     // 懒加载
-
-    let src = $('.list-pic img').attr('data-src');
-    let img = $('.list-pic img').get(0);
-    this.loadImg(src, img)
+      let src = $('.list-pic img').attr('data-src');
+      let img = $('.list-pic img').get(0);
+      this.loadImg(src, img) 
   }
   loadImg(src, image){
     let img = new Image();
@@ -29,6 +28,10 @@ class DiscountPage {
     let count = await discountList.getDiscount({})
     let {data:list} = count;
     this.list = list
+    
+    
+
+
     this.renderer(this.list);
     // 获取图片
     let $imgFoot = $('.foot img');

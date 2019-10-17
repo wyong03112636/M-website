@@ -1,0 +1,109 @@
+<div class="wrap-equip">
+    <div class="equip-search">
+        <input type="text" placeholder="搜索全网低价好券">
+        <span class="yo-ico">&#xe682;</span>
+        <i class="yo-ico">&#xe624;</i>
+    </div>
+    <div class="equip-classify">
+        <ul>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-1_f79f337.png" alt="">
+                <span>热销排行</span>
+            </li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-2_4b3ef21.png" alt="">
+                <span>好价精选</span>
+            </li>
+            <li>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-3_680282c.png" alt="">
+                <span>当季新款</span>
+            </li>
+        </ul>
+    </div>
+    <div class="equip-adv">
+        <div class="adv">
+            <div class="slider">
+                <img src="http://shihuo.hupucdn.com/appZones/201701/1815/18dad2cc843300a3560cca54886957e5.png?imageView2/0/w/400/h/208/interlace/1" alt="">
+            </div>
+            <div class="content">
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-1_2b1686e.png" alt="">
+                <div>
+                <p>
+                    <span>篮球Basketball</span>
+                    <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-go_f747d60.png" alt="">
+                </p>
+                <h5>乔丹实战鞋评测</h5>
+                </div>
+                <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-2_9a175b7.png" alt="">
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>篮球鞋</li>
+                <li>篮球服饰</li>
+                <li>篮球配件</li>
+                <li>篮球</li>
+                <li>Nike</li>
+                <li>adidas</li>
+                <li>Jordan</li>
+                <li>全部</li>
+            </ul>
+        </div>
+        <div class="adv">
+                <div class="slider">
+                    <img src="http://shihuo.hupucdn.com/appZones/201701/1815/fa1b657f6d267f5ccb6c3213ba7cebd3.png?imageView2/0/w/400/h/208/interlace/1" alt="">
+                </div>
+                <div class="content">
+                    <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-1_2b1686e.png" alt="">
+                    <div>
+                    <p>
+                        <span>跑步Running</span>
+                        <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-go_f747d60.png" alt="">
+                    </p>
+                    <h5>户外跑鞋选购</h5>
+                    </div>
+                    <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-2_9a175b7.png" alt="">
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>篮球鞋</li>
+                    <li>篮球服饰</li>
+                    <li>篮球配件</li>
+                    <li>篮球</li>
+                    <li>Nike</li>
+                    <li>adidas</li>
+                    <li>Jordan</li>
+                    <li>全部</li>
+                </ul>
+            </div>
+            <div class="adv">
+                    <div class="slider">
+                        <img src="http://shihuo.hupucdn.com/appZones/201701/1815/d5bdeb4f9dee46e6cf24e239da707bc3.png?imageView2/0/w/400/h/208/interlace/11" alt="">
+                    </div>
+                    <div class="content">
+                        <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-1_2b1686e.png" alt="">
+                        <div>
+                        <p>
+                            <span>潮流CASULA</span>
+                            <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-go_f747d60.png" alt="">
+                        </p>
+                        <h5>radium 格子衬衫 等8款 超低价 年度鞋款 回顾</h5>
+                        </div>
+                        <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/ban-2_9a175b7.png" alt="">
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>篮球鞋</li>
+                        <li>篮球服饰</li>
+                        <li>篮球配件</li>
+                        <li>篮球</li>
+                        <li>Nike</li>
+                        <li>adidas</li>
+                        <li>Jordan</li>
+                        <li>全部</li>
+                    </ul>
+                </div>
+    </div>
+</div>

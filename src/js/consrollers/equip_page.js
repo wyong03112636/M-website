@@ -1,4 +1,4 @@
-const equipView = require('../views/equip_page.art');
+const equipView = require('../views/equip-page.art');
 
 class Equip {
   constructor() {}
