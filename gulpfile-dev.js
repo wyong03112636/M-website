@@ -16,8 +16,8 @@ const proxy = require('http-proxy-middleware')
         mode:'development',
         entry:{
             app:'./src/js/app.js',
-            'app-search':'./src/js/app-search.js',
-            'app-profile':'./src/js/app-profile.js'
+            'app-register':'./src/js/app-register.js',
+            'app-login':'./src/js/app-login.js'
         },
         output:{
             path:path.resolve(__dirname, './dev'), //物理路径

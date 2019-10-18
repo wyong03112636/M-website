@@ -30,6 +30,7 @@ class List {
 
     //定义图像
     let $imgFoot = $('.foot img');
+    
     let bscroll = new bScroll.default($('main').get(0), {
       probeType: 2,
     });

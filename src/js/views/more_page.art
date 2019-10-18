@@ -4,7 +4,7 @@
             <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/head_02977e3.png" alt="">
         </div>
         <div class="login-content">
-            <div><span>登录</span><span>注册</span></div>
+            <div><span id="login">登录</span><span id="register">注册</span></div>
             <h4>金币 0</h4>
         </div>
     </div>
