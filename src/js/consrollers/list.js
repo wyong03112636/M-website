@@ -11,6 +11,10 @@ class List {
   renderer(list) {
     let html = listmodel({ list });
     $('.wrap-list ul').html(html);
+    //详情页面
+    $('.wrap-list ul li').on('tap', function(){
+      location.hash = 'details';
+    })
   }
   async render() {
     let that = this;
@@ -57,6 +61,19 @@ class List {
         $imgFoot.addClass('up');
       }
     });
+    this.bindEvent()
   }
+   bindEvent() {
+     let that = this;
+    $('.productlist nav span').on('tap',async function(){
+      $(this).addClass('active').siblings().removeClass('active')
+      let inf = $(this).attr('data-inf')
+      let res = await listcount.getAnother({type:inf})
+      let {data:list} = res;
+      that.renderer(list)
+    } )
+   
+  }
+
 }
 export default new List();

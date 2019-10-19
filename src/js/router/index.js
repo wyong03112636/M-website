@@ -3,7 +3,7 @@ import discountController from '../consrollers/discount_page';
 import discoverController from '../consrollers/discover_page';
 import equipController from '../consrollers/equip_page';
 import moreController from '../consrollers/more_page';
-
+import detailsController from "../consrollers/details-page";
 
 class Router {
   constructor() {
@@ -20,6 +20,7 @@ class Router {
       discoverController,
       equipController,
       moreController,
+      detailsController
     };
     pageController[hash + 'Controller'].render();
     if(hash === 'index'){
@@ -41,6 +42,7 @@ class Router {
   }
   hanelHashChangePage() {
     let hash = location.hash.substr(1);
+    if(hash === 'search') return null;
     this.renderDom(hash);
     this.setAciveClass(hash);
   }

@@ -7,5 +7,16 @@ module.exports = {
       dataType: 'json',
     });
   },
-  
+  getAnother({type='basketball'}){
+    return $.ajax({
+      url: `/api/homefis/getNews?pageSize=20&param_str=&type=${type}&channel_type=11`,
+      dataType: 'json',
+    });
+  },
+  getSearch({keyword}) {
+    return $.ajax({
+      url: `/api/search?page=1&page_size=30&type=news&keywords=${keyword}`,
+      dataType: 'json',
+    });
+  }
 };

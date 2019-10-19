@@ -12,7 +12,7 @@
       justify-content: space-around;
       span {
         color: #444;
-        &:nth-of-type(1) {
+        &.active {
           color: orangered;
           border-bottom: 0.02rem solid orangered;
         }
@@ -31,7 +31,7 @@
         color: #444;
         text-align: center;
         line-height: 0.25rem;
-        &:nth-of-type(1) {
+        &.active {
           background: orangered;
           color: #eee;
         }

@@ -1,0 +1,78 @@
+<div class="wrap-details">
+    <div class="details-tit">
+        <span class="yo-ico" id="back">&#xe74a;</span>
+        <p>adidas UItra Boost4.0</p>
+        <span class="yo-ico">&#xe748;</span>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/trade/reposition/2019-03-05/52933720f4e315e410644cccd36b2a6f.png?imageView2/1/w/700/h/700/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/def/20190305/d7156960b890a625bf6af175303acca41551755336.jpg?imageView2/1/w/700/h/700/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/trade/reposition/2019-03-05/52933720f4e315e410644cccd36b2a6f.png?imageView2/1/w/700/h/700/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/def/20181208/07be09dc93e47674e67677ca02c0d1471544239410.jpg?imageView2/1/w/700/h/700/interlace/1" alt=""></div>
+            <div class="swiper-slide"><img src="http://shihuo.hupucdn.com/trade/reposition/2018-12-08/8a332d89de94b06a75639103c452a19d.png?imageView2/1/w/700/h/700/interlace/1" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="details-introduce">
+        <div>
+            <h4>adidas UItra Boost 4.0</h4>
+            <p>adidas UItra Boots最早推出于2015年，是adidas旗下最强跑鞋，...</p>
+        </div>
+        <h5>详情 ></h5>
+    </div>
+
+    <div class="details-review">
+        <div>
+            <i><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/sports/detail/kb-icon_e6558f2.png" alt=""></i><span>全网口碑（7497）</span>
+        </div>
+        <div>
+           <i> <img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/sports/detail/pc-icon_54fdee1.png" alt=""></i><span>识货测评（182）</span>
+        </div>
+    </div>
+
+    <div class="details-size">
+        <div>
+            <i><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/sports/detail/s-icon-1_f16b4e3.png" alt=""></i>
+            <span>
+                <h4>筛选尺码</h4>
+                <h4>选择您的尺码</h4>
+            </span>
+        </div>
+        <div>
+            <i><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/sports/detail/s-icon-2_43466af.png" alt=""></i>
+            <span>
+                <h4>点击订阅</h4>
+                <h4>获取最低价</h4>
+            </span>
+        </div>
+    </div>
+
+    <div class="details-ensure">
+        <div>
+            <span><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/sports/detail/how-icon_844c490.png" alt=""></span>
+            <p>识货如何做到正品保障？</p>
+        </div>
+        <h4>查看详情 ></h4>
+    </div>
+
+    <div class="details-praise">
+        <h3>全网口碑(7431)</h3>
+        <ul>
+            <li class="active">全部</li>
+            <li>识货</li>
+            <li>有图</li>
+            <li>脚感</li>
+            <li>鞋码</li>
+            <li>鞋面</li>
+            <li>缓震</li>
+        </ul>
+    </div>
+
+    <div class="details-evaluate">
+        <ul>
+           
+        </ul>
+    </div>
+</div>

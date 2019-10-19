@@ -18,7 +18,7 @@ app.use('/register', (request, response)=>{
     let data = request.query;
     userdata.push(data);
     response.send(JSON.stringify({
-        mgs:'success'
+        msg:'success'
     }))
 })
 

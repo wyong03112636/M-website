@@ -1,5 +1,16 @@
 <div class="search">
-    <input type="text" name="" id="" placeholder="搜索商品，品牌">
-    <span></span>
-    <i class="yo-ico">&#xe624;</i>;
+    <div>
+        <em class="yo-ico" id="go-back">&#xe74a;</em>
+        <input type="text" name="" id="sear" placeholder="搜索商品，品牌">
+        <span></span>
+        <i class="yo-ico">&#xe624;</i>;
+    </div>
+    <div class="tips">
+        <ul>
+            <li data-keyword="AJ11">AJ11</li>
+            <li data-keyword="Air force 1">Air force 1</li>
+            <li data-keyword="Jordan">Jordan</li>
+            <li data-keyword="LBJ15">LBJ15</li>
+        </ul>
+    </div>
 </div>

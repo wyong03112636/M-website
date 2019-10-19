@@ -1,0 +1,195 @@
+.wrap-details{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    .details-tit{
+        width: 100%;
+        padding: .07rem;
+        display: flex;
+        justify-content: space-between;
+        p{
+            color: #444;
+            font-size: .2rem;
+            font-weight: bold;
+        }
+        span{
+            font-size: .2rem;
+        }
+    }
+    .swiper-container{
+        width: 100%;
+        height: auto;
+        img{
+            height: 3.5rem;
+        }
+    }
+    .details-introduce{
+        width: 100%;
+        display: flex;
+        background: #ffffff;
+        justify-content: space-between;
+        >div{
+            padding: .07rem;
+            width: 70%;
+            h4{
+                font-size: .18rem;
+                font-weight: normal;
+            }
+            p{
+                color: #aaaaaa;
+            }
+        }
+        h5{
+            padding-top: .3rem;
+            width: 10%;
+            color: #278ccf;
+        }
+    }
+    .details-review{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: .07rem 0;
+        margin: .07rem 0;
+        background: #ffffff;
+        >div{
+            span{
+                line-height: .3rem;
+            }
+            i{
+                img{
+                    width: .2rem;
+                }
+            }
+        }
+    }
+    .details-size{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: #ffffff;
+        >div{
+            display: flex;
+            justify-content: center;
+           i{
+               padding: .05rem;
+            img{
+                width: .24rem;
+                padding-top: .05rem;
+            }
+           }
+            span{
+                h4{
+                    font-size: .12rem;
+                    &:nth-of-type(2){
+                        color: #dddddd;
+                    }
+                }
+            }
+        }
+    }
+    .details-ensure{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .1rem;
+        background: #dddddd;
+        margin-bottom: .1rem;
+        >div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                width: .2rem;
+            }
+            p{
+                font-size: .18rem;
+                padding-left: .05rem;
+            }
+        }
+        h4{
+            font-size: #444444;
+            font-size: .16rem;
+        }
+    }
+    .details-praise{
+        width: 100%;
+        background: #ffffff;
+        h3{
+            width: 100%;
+            padding:.07rem .1rem;
+            color: #444444;
+            font-weight: bold;
+            font-size: .25rem;
+          
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            li{
+                width: .4rem;
+                height: .3rem;
+                color: #444444;
+                line-height: .3rem;
+                text-align: center;
+                background: #eeeeee;
+            }
+            .active{
+                background: coral;
+                color: #ffffff;
+            }
+        }
+    }
+    .details-evaluate{
+        width: 100%;
+        background: #ffffff;
+        ul{
+            width: 100%;
+            li{
+                width: 100%;
+                .evaluate-tit{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    .left{
+                        width: 15%;
+                        padding: .07rem;
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .right{
+                        padding: .07rem .05rem;
+                        h3{
+                            color: #444444;
+                            font-size: .18rem;
+                        }
+                        h4{
+                            color: #666666;
+                            font-size: .16rem;
+                        }
+                    }
+                }
+                p{
+                    width: 100%;
+                    font-size: .2rem;
+                    color: #555;
+                    padding: .07rem .04rem;
+                }
+                .evaluate-pic{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    img{
+                        width: 25%;
+                        padding-right: .05rem;
+                    }
+                }
+            }
+        }
+    }
+}

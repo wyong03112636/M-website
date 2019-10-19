@@ -28,8 +28,7 @@ class Register{
             },
             dataType:'json',
             success:(res)=>{
-                console.log(res)
-               if (res) {
+               if (res.msg === 'success') {
                    alert('注册成功, 请点登录按钮！')
                }
             }

@@ -1,0 +1,19 @@
+   {{each list}} 
+    <li>
+        <div class="evaluate-tit">
+            <div class="left">
+                <img src="{{$value.avatar}}" alt="">
+            </div>
+            <div class="right">
+                <h3>{{$value.nickname}}</h3>
+                <h4>{{$value.date}}</h4>
+            </div>
+        </div>
+        <p>{{$value.content}}</p>
+        <div class="evaluate-pic">
+            <img src="{{$value.img_attr[0]}}" alt="">
+            <img src="{{$value.img_attr[1]}}" alt="">
+            <img src="{{$value.img_attr[2]}}" alt="">
+        </div>
+    </li>
+    {{/each}}

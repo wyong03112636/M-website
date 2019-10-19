@@ -1,15 +1,16 @@
-
+    <ul class="search-list">
     {{each list}}
     <li>
         <div class="picture">
-            <img src="{{$value.data.img}}" alt="">
+            <img src="{{$value.img_url}}" alt="">
         </div>
         <div class="describe">
-            <h4>{{$value.data.title}}</h4>
+            <h4>{{$value.title[0]}}</h4>
             <p><img src="http://sh1.hoopchina.com.cn/images/trademobile/quote_left.png" alt="">
-                <span>{{$value.data.intro}}</span>
+                <span>{{$value.subtitle}}</span>
             <img src="http://sh1.hoopchina.com.cn/images/trademobile/quote_right.png" alt=""></p>
-            <b>{{$value.data.merchant}}<i>￥{{$value.data.price}}</i></b>
+            <b>{{$value.business}}<i>￥{{$value.price}}</i></b>
         </div>
     </li>
     {{/each}}
+</ul>
